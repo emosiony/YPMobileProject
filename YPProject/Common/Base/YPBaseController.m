@@ -15,19 +15,38 @@
 
 @implementation YPBaseController
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    if (self.hiddenNavigationBar) {
+        [self.navigationController setNavigationBarHidden:YES];
+    }
+    
+    if (self.hiddenNavigationBarShowImage) {
+        self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:[UIColor clearColor]];
+    }
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    if (self.hiddenNavigationBar) {
+        [self.navigationController setNavigationBarHidden:NO];
+    }
+    
+    if (self.hiddenNavigationBarShowImage) {
+        self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:RGB(212, 212, 212)];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
+    self.navigationController.navigationBar.translucent = NO; // 导航栏不通明
+    // 不允许 viewController 自动调整，我们自己布局；如果设置为YES，视图会自动下移 64 像
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeAll;
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

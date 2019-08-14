@@ -42,8 +42,9 @@
     
     _page     = 1;
     _pageSize = 15;
-    self.emptyDesc = @"暂无数据";
-    
+    self.emptyTitle = @"暂无数据";
+    self.emptyDesc  = @"";
+
     [self.view addSubview:self.tableView];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,7 +60,7 @@
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         
         weakSelf.page += 1;
-        [weakSelf loadDataEnd];
+        [weakSelf loadDataSource];
     }];
     self.tableView.mj_footer.automaticallyChangeAlpha = YES;
 }
@@ -76,12 +77,12 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
         weakSelf.page = 1;
-        [weakSelf loadDataEnd];
+        [weakSelf loadDataSource];
     }];
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
 }
 
--(void)loadDataEnd {
+-(void)loadDataSource {
     
     [self endRefreshing];
     [self.tableView reloadData];
@@ -126,28 +127,6 @@
     return UITableViewAutomaticDimension;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    //点击cell 操作
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.1;
-}
-
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return [[UIView alloc] init];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0.1;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    return [[UIView alloc] init];
-}
-
 #pragma mark -- Empty delegate
 -(BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView {
     BOOL isNet = [YPReachability shareInstall].hasNet;
@@ -156,7 +135,7 @@
 
 //是否允许滚动，默认NO
 - (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView {
-    return YES;
+    return NO;
 }
 
 -(UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
@@ -174,11 +153,21 @@
 
 -(NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
     
-    NSString *text = ([YPReachability shareInstall].hasNet == NO) ? @"没有网络~~" : self.emptyDesc;
+    NSString *text = ([YPReachability shareInstall].hasNet == NO) ? @"网络走丢了" : self.emptyTitle;
     UIFont *font = [UIFont systemFontOfSize:14.0];
     NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:text];
     [attStr addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, text.length)];
     [attStr addAttribute:NSForegroundColorAttributeName value:HEXColor(0x666666) range:NSMakeRange(0, text.length)];
+    return attStr;
+}
+
+-(NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
+    
+    NSString *text = ([YPReachability shareInstall].hasNet == NO) ? @"请检查您的网络" : self.emptyDesc;
+    UIFont *font = [UIFont systemFontOfSize:12.0];
+    NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:text];
+    [attStr addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, text.length)];
+    [attStr addAttribute:NSForegroundColorAttributeName value:HEXColor(0x999999) range:NSMakeRange(0, text.length)];
     return attStr;
 }
 
@@ -196,13 +185,21 @@
         _tableView.delegate   = self;
         _tableView.touchDelegate   = self;
         _tableView.backgroundColor = HEXColor(0xFFFFFF);
-        _tableView.tableHeaderView = [UIView new];
-        _tableView.tableFooterView = [UIView new];
-        _tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
+
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.001)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.001)];
         
+        _tableView.separatorStyle  = UITableViewCellSeparatorStyleSingleLine;
+        _tableView.layoutMargins   = UIEdgeInsetsMake(0, 8, 0, 8);
+        _tableView.separatorInset  = UIEdgeInsetsMake(0, 8, 0, 8);
+
         _tableView.rowHeight          = UITableViewAutomaticDimension;
-        _tableView.estimatedRowHeight = 44.0f;
         _tableView.separatorColor     = HEXColor(0xF3F3F3);
+        
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.estimatedRowHeight           = 0.0f;
+        
+        _tableView.keyboardDismissMode          = UIScrollViewKeyboardDismissModeOnDrag;
         
         if (@available(iOS 11.0, *)) { // ios 11 以上
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;

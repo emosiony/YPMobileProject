@@ -8,6 +8,7 @@
 
 #import "YPBaseNavitionController.h"
 #import "YPAppConfig.h"
+#import "UIViewController+WLBackButton.h"
 
 @interface YPBaseNavitionController ()
 <UIGestureRecognizerDelegate,UINavigationControllerDelegate>

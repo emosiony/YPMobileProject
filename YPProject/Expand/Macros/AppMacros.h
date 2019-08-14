@@ -47,7 +47,7 @@
 #define kStatusAndNavBarH       (kStatusBarH + kNavigationBarH)
 
 /** HomeLineH 高度 iPhoneX:34 other:0 */
-#define kHomeLineH              (kIsPhoneXLater ? 34 : 0)
+#define kHomeLineH              (isPhoneXLater ? 34 : 0)
 /** TabBar 高度 iPhoneX:83 other:49 */
 #define kTabBarH                (49+kHomeLineH)
 
@@ -67,7 +67,12 @@
 #define IS_IPHONE_8         (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_8P        (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 
-#define kIsPhoneXLater      @available(iOS 11.0, *) && [[[[UIApplication sharedApplication] delegate] window] safeAreaInsets].bottom > 0.0f && IS_IPHONE;
+#define isPhoneXLater \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *) && IS_IPHONE) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
 
 #define kIPHONE_7W 375.0
 #define kIPHONE_7H 667.0

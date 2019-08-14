@@ -8,6 +8,8 @@
 
 #import "YPMineViewController.h"
 
+#define Cell_ReuseIdentifier @"reuseIdentifier"
+
 @interface YPMineViewController ()
 
 @end
@@ -21,16 +23,23 @@
     self.emptyDesc = @"O(∩_∩)O哈哈~， 没数据啦";
     
     [self setEmptyDelegate];
+//
+//    for (NSInteger i = 0; i < 20; i++) {
+//        [self.dataList addObject:[NSString stringWithFormat:@"%zd", i]];
+//    }
+//
+//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:Cell_ReuseIdentifier];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Cell_ReuseIdentifier forIndexPath:indexPath];
+    cell.textLabel.text   = [self.dataList objectAtIndex:indexPath.row];
+    return cell;
 }
-*/
 
 @end

@@ -26,4 +26,8 @@
 #import <MJExtension.h>
 #import <Masonry.h>
 
+
+#pragma mark -- Category
+#import "UIImage+Color.h"
+
 #endif /* HeaderTool_h */

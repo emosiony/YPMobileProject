@@ -24,6 +24,11 @@
 		6338C0E523028F35001FF843 /* YPInterfaceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E423028F35001FF843 /* YPInterfaceURL.m */; };
 		6338C0E923029457001FF843 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E823029457001FF843 /* DeviceInfo.m */; };
 		6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0EB23029A63001FF843 /* YPSessionManager.m */; };
+		639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */; };
+		639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */; };
+		63A39E0F2303D95A00D5F1B6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A39E0D2303D95A00D5F1B6 /* UIImage+Color.m */; };
+		63A39E122303E70800D5F1B6 /* YPBaseCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A39E112303E70800D5F1B6 /* YPBaseCollectionController.m */; };
+		63A39E152303ECDF00D5F1B6 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A39E142303ECDF00D5F1B6 /* UIColor+Extension.m */; };
 		63B1B9EC2302A47B002A3A96 /* YPFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B9EB2302A47B002A3A96 /* YPFormData.m */; };
 		63B1B9F02302B8B4002A3A96 /* YPBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B9EF2302B8B4002A3A96 /* YPBaseController.m */; };
 		63B1B9F62302BC31002A3A96 /* YPBaseNavitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B9F52302BC31002A3A96 /* YPBaseNavitionController.m */; };
@@ -94,6 +99,16 @@
 		6338C0E823029457001FF843 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		6338C0EA23029A63001FF843 /* YPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSessionManager.h; sourceTree = "<group>"; };
 		6338C0EB23029A63001FF843 /* YPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSessionManager.m; sourceTree = "<group>"; };
+		639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLBackButton.h"; sourceTree = "<group>"; };
+		639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WLBackButton.m"; sourceTree = "<group>"; };
+		639AECCC23039E79002B10C5 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		63A39E0D2303D95A00D5F1B6 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		63A39E0E2303D95A00D5F1B6 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		63A39E102303E70800D5F1B6 /* YPBaseCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPBaseCollectionController.h; sourceTree = "<group>"; };
+		63A39E112303E70800D5F1B6 /* YPBaseCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPBaseCollectionController.m; sourceTree = "<group>"; };
+		63A39E132303ECDF00D5F1B6 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		63A39E142303ECDF00D5F1B6 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		63B1B9EA2302A47B002A3A96 /* YPFormData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPFormData.h; sourceTree = "<group>"; };
 		63B1B9EB2302A47B002A3A96 /* YPFormData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPFormData.m; sourceTree = "<group>"; };
 		63B1B9EE2302B8B4002A3A96 /* YPBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPBaseController.h; sourceTree = "<group>"; };
@@ -223,6 +238,7 @@
 		632B00E52301647100540399 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				639AECC723039E28002B10C5 /* Category */,
 				6338C0E223028EF1001FF843 /* Const */,
 				632B00F923016E7A00540399 /* HeaderTool */,
 				632B00F623016ACC00540399 /* Macros */,
@@ -381,6 +397,45 @@
 			path = DeviceInfo;
 			sourceTree = "<group>";
 		};
+		639AECC723039E28002B10C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				63A39E0C2303D91900D5F1B6 /* UIColor */,
+				63A39E0B2303D90B00D5F1B6 /* UIImage */,
+				639AECC823039E3E002B10C5 /* UIViewController */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		639AECC823039E3E002B10C5 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				639AECCC23039E79002B10C5 /* UIViewController+BackButtonHandler.h */,
+				639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */,
+				639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */,
+				639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		63A39E0B2303D90B00D5F1B6 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				63A39E0E2303D95A00D5F1B6 /* UIImage+Color.h */,
+				63A39E0D2303D95A00D5F1B6 /* UIImage+Color.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		63A39E0C2303D91900D5F1B6 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				63A39E132303ECDF00D5F1B6 /* UIColor+Extension.h */,
+				63A39E142303ECDF00D5F1B6 /* UIColor+Extension.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		63B1B9ED2302B7E7002A3A96 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +448,8 @@
 				63B1B9F82302BFA3002A3A96 /* YPBaseTabBarController.m */,
 				63B1BA012302C2E0002A3A96 /* YPBaseTableController.h */,
 				63B1BA022302C2E0002A3A96 /* YPBaseTableController.m */,
+				63A39E102303E70800D5F1B6 /* YPBaseCollectionController.h */,
+				63A39E112303E70800D5F1B6 /* YPBaseCollectionController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -676,9 +733,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A39E122303E70800D5F1B6 /* YPBaseCollectionController.m in Sources */,
 				632B00F523016AB200540399 /* YPAppConfig.m in Sources */,
 				63B1B9FF2302C095002A3A96 /* TransitionAnimation.m in Sources */,
+				639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */,
 				6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */,
+				63A39E152303ECDF00D5F1B6 /* UIColor+Extension.m in Sources */,
 				63B1BA032302C2E0002A3A96 /* YPBaseTableController.m in Sources */,
 				6338C0DC2302871F001FF843 /* YPProgressHUD.m in Sources */,
 				63B1B9F62302BC31002A3A96 /* YPBaseNavitionController.m in Sources */,
@@ -695,6 +755,8 @@
 				632B00FD2301726F00540399 /* YPHomeViewController.m in Sources */,
 				63B1BA072302C32C002A3A96 /* YPTableView.m in Sources */,
 				632B00C12301641100540399 /* main.m in Sources */,
+				639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */,
+				63A39E0F2303D95A00D5F1B6 /* UIImage+Color.m in Sources */,
 				632B01002301727800540399 /* YPMineViewController.m in Sources */,
 				632B00B32301640F00540399 /* AppDelegate.m in Sources */,
 			);

@@ -12,6 +12,7 @@
 #define View_bg_Color       HEXColor(0xF3F3F3)
 #define Nav_bg_Color        HEXColor(0xFFFFFF)
 #define Bar_bg_Color        HEXColor(0xFFFFFF)
+#define Bar_back_image      [UIImage imageNamed:@"back"]
 
 #define BarItem_normalColor HEXColor(0x8C8C8C)
 #define BarItem_selectColor HEXColor(0x333333)
@@ -31,7 +32,7 @@
 
 // 设置 navigationBar 和 Tabbar
 -(void)setNavitionAndTabbarConfig {
-
+    
 }
 
 // 设置 SVPProgress 
@@ -59,6 +60,13 @@
         _navTitleColor = Nav_Title_Color;
     }
     return _navTitleColor;
+}
+
+- (UIImage *)backImage {
+    if (_backImage == nil) {
+        _backImage = Bar_back_image;
+    }
+    return _backImage;
 }
 
 -(UIColor *)viewBgColor {

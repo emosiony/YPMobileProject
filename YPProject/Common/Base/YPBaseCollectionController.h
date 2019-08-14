@@ -1,21 +1,21 @@
 //
-//  YPBaseTableController.h
+//  YPBaseCollectionController.h
 //  YPProject
 //
-//  Created by Jtg_yao on 2019/8/13.
+//  Created by Jtg_yao on 2019/8/14.
 //  Copyright © 2019 jzg. All rights reserved.
 //
 
 #import "YPBaseController.h"
-#import "YPTableView.h"
 #import <UIScrollView+EmptyDataSet.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^EmptyTapBlock)(void);
 
-@interface YPBaseTableController : YPBaseController
-<UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, TouchTableViewDelegate>
+@interface YPBaseCollectionController : YPBaseController
+<UICollectionViewDelegate,UICollectionViewDataSource,
+DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 
 /** 空白占位图 */
 @property (nonatomic,strong) UIImage *emptyImage;
@@ -24,16 +24,18 @@ typedef void(^EmptyTapBlock)(void);
 /** 空白 描述 */
 @property (nonatomic,copy)   NSString *emptyDesc;
 
-@property (nonatomic,strong) YPTableView *tableView;
-@property (nonatomic,copy)   NSMutableArray *dataList;
+/** flow */
+@property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
+/** collectionView 列表 */
+@property (nonatomic,strong) UICollectionView *collectionView;
+/** 数据源 */
+@property (nonatomic,strong) NSMutableArray *dataList;
 
 @property (nonatomic,assign) NSInteger page;
 @property (nonatomic,assign) NSInteger pageSize;
 
 /** 点击空白 */
 @property (nonatomic,copy) EmptyTapBlock emptyTapBlock;
-
--(instancetype)initWithStyle:(UITableViewStyle)style;
 
 /** 设置刷新 -- 下拉 */
 -(void)setUpRefreshing;
