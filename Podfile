@@ -19,7 +19,7 @@ target 'YPProject' do
 #  pod 'PYPhotoBrowser'    # 图片浏览
 #  pod 'YYCache'           # 缓存
 #  pod 'IQKeyboardManager' # 键盘
-#  pod 'ReactiveCocoa'     # 响应式 编程
+  pod 'ReactiveObjC'      # 响应式 编程
 #  pod 'LinqToObjectiveC'  # 数据查询
   pod 'DZNEmptyDataSet'   # collectionview tableview emptyView
 #  pod 'WMPageController'  # 分栏菜单
