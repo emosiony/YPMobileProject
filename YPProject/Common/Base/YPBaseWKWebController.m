@@ -12,7 +12,7 @@
 
 #define kSCRIPT_MESSAGE_NAME @"AppModel"
 
-#define kDefault_Progress_HEIGHT  3
+#define kDefault_Progress_HEIGHT  1.0f
 #define kDefault_Progress_Color   HEXColor(0x556281)
 
 @interface YPBaseWKWebController ()
@@ -48,6 +48,7 @@
     [super viewDidLoad];
     
     [self WKSetUpSubviews];
+    [self WKDataInit];
 }
 
 - (void)WKSetUpSubviews {
@@ -58,7 +59,7 @@
     [self.view addSubview:self.webView];
     
     [self.progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_offset(self.view);
+        make.top.left.right.mas_equalTo(self.view);
         make.height.mas_equalTo(self.progressHeight);
     }];
     
@@ -192,7 +193,10 @@
 
 
 #pragma mark -- Delegate
-
+#pragma mark - WKUIDelegate
+- (void)webViewDidClose:(WKWebView *)webView {
+    NSLog(@"%s", __FUNCTION__);
+}
 
 #pragma mark - WKScriptMessageHandler
 - (void)userContentController:(WKUserContentController *)userContentController
@@ -205,7 +209,7 @@
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     } else {
-        DLog(@"%@", message.body);
+        DLog(@"message.name == %@, message.body == %@",message.name, message.body);
     }
 }
 
@@ -315,17 +319,27 @@
 // 导航失败时会回调
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
     NSLog(@"%s", __FUNCTION__);
-    if (error.code == NSURLErrorNotConnectedToInternet) {
-        NSString *errorDesc = [self errorTipHandleWithCode:error.code];
-        [SVProgressHUD showErrorWithStatus:errorDesc];
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC));
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            [SVProgressHUD dismiss];
-            [self.navigationController popViewControllerAnimated:YES];
-        });
-    }
 }
 
+// 页面内容到达main frame时回调
+- (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation {
+    NSLog(@"%s", __FUNCTION__);
+}
+
+// 导航完成时，会回调（也就是页面载入完成了）
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
+    NSLog(@"%s", __FUNCTION__);
+}
+
+// 导航失败时会回调
+- (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
+    return;
+}
+
+//内存过大时，会出现白屏
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView {
+    [webView reload];    //刷新就好了
+}
 
 #pragma mark -- Getter
 -(WKWebViewConfiguration *)webConfig {

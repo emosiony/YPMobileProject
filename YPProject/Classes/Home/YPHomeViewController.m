@@ -9,7 +9,7 @@
 //
 
 #import "YPHomeViewController.h"
-#import "YPMineViewController.h"
+#import "YPBaseWKWebController.h"
 
 @interface YPHomeViewController ()
 
@@ -26,8 +26,9 @@
 
 -(void)pushPage {
     
-    YPMineViewController *page = [[YPMineViewController alloc] initWithStyle:(UITableViewStyleGrouped)];
+    YPBaseWKWebController *page = [[YPBaseWKWebController alloc] init];
 //    page.hiddenNavigationBar = YES;
+    page.url = @"http://baidu.com";
     page.hiddenNavigationBarShowImage = YES;
     [self.navigationController pushViewController:page animated:YES];
 }
