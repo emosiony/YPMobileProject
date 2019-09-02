@@ -23,7 +23,7 @@ target 'YPProject' do
 #  pod 'LinqToObjectiveC'  # 数据查询
   pod 'DZNEmptyDataSet'   # collectionview tableview emptyView
 #  pod 'WMPageController'  # 分栏菜单
-#  pod 'SDCycleScrollView' # 滚动
+  pod 'SDCycleScrollView' # 滚动
 #  pod 'BlocksKit'         # block
 #  pod 'zhPopupController' # 弹窗 弹自定义View
 
