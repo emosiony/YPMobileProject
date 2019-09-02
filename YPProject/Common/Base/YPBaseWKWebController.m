@@ -156,6 +156,7 @@
                 [weakSelf.view layoutIfNeeded];
             } completion:^(BOOL finished) {
                 weakSelf.progressView.hidden = YES;
+                self.progressView.progress   = 0.0f;
                 weakSelf.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
                 [weakSelf.view setNeedsUpdateConstraints];
                 [weakSelf.view updateConstraintsIfNeeded];
@@ -170,8 +171,6 @@
                     [weakSelf.progressView mas_updateConstraints:^(MASConstraintMaker *make) {
                         make.height.mas_equalTo(weakSelf.progressHeight);
                     }];
-                    [weakSelf.view setNeedsUpdateConstraints];
-                    [weakSelf.view updateConstraintsIfNeeded];
                 }];
             }
         }
@@ -386,6 +385,7 @@
         _progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
         _progressView.tintColor      = self.progressColor;
         _progressView.trackTintColor = HEXColor(0xF1F1F1);
+        _progressView.progress       = 0.0f;
     }
     return _progressView;
 }
