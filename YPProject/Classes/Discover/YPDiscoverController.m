@@ -134,13 +134,12 @@
     
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(self.contentScollView);
-        make.height.mas_equalTo(kScreenHeight-kStatusAndNavBarH);
-        
+        make.height.mas_equalTo(kScreenHeight-kNavHAndTabBarShowH);
         make.left.right.bottom.mas_equalTo(self.contentScollView);
         make.top.mas_equalTo(self.bannerView.mas_bottom);
     }];
     
-    self.pageController.viewFrame = CGRectMake(0, 0, kScreenWidth, kScreenHeight-kStatusAndNavBarH);
+    self.pageController.viewFrame = CGRectMake(0, 0, kScreenWidth, kScreenHeight-kNavHAndTabBarShowH);
 }
 
 

@@ -225,6 +225,7 @@ static CGFloat MenuHeaderView_Height = 44;
         }
         [YPProgressHUD yp_dismissHUD];
         [self.tableView reloadData];
+        self.mj_header ? [self.mj_header endRefreshing] : nil;
     } failure:^(NSError * _Nonnull error) {
         if (self.page > 1) {
             self.page --;
@@ -234,6 +235,7 @@ static CGFloat MenuHeaderView_Height = 44;
         self.mj_header ? [self.mj_header endRefreshing] : nil;
         [self.tableView reloadData];
         [YPProgressHUD yp_showErrorHUDWithTitle:error.localizedDescription];
+        self.mj_header ? [self.mj_header endRefreshing] : nil;
     }];
 }
 

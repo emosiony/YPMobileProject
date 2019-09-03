@@ -173,9 +173,11 @@
         }
         [YPProgressHUD yp_dismissHUD];
         [self.tableView reloadData];
+        self.mj_header ? [self.mj_header endRefreshing] : nil;
     } failure:^(NSError * _Nonnull error) {
         [self.tableView reloadData];
         [YPProgressHUD yp_showErrorHUDWithTitle:error.localizedDescription];
+        self.mj_header ? [self.mj_header endRefreshing] : nil;
     }];
 }
 
