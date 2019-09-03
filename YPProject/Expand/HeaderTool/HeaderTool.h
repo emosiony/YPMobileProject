@@ -14,6 +14,7 @@
 #import "AppDelegate.h"
 #import "YPInterfaceURL.h"
 #import "YPAppHealper.h"
+#import "YPHttpTool.h"
 
 #pragma mark -- Tools
 #import "YPProgressHUD.h"
@@ -30,5 +31,7 @@
 
 #pragma mark -- Category
 #import "UIImage+Color.h"
+#import "NSString+Common.h"
+#import "UIView+Extension.h"
 
 #endif /* HeaderTool_h */

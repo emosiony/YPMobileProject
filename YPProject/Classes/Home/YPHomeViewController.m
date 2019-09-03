@@ -61,6 +61,8 @@
         _bannerScroll.pageDotColor        = HEXColor(0xcccccc);
         _bannerScroll.pageControlStyle    = SDCycleScrollViewPageContolStyleAnimated;
         
+        _bannerScroll.localizationImageNamesGroup = @[[UIImage imageWithColor:HEXColor(0x123456)], [UIImage imageWithColor:HEXColor(0xF3F3F3)] , [UIImage imageWithColor:HEXColor(0x123321)]];
+        
         __weak typeof(self) weakSelf = self;
         _bannerScroll.clickItemOperationBlock = ^(NSInteger currentIndex) {
             NSLog(@"click index == %zd", currentIndex);

@@ -15,11 +15,11 @@
 
 +(void)GET:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
-    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forKey:@"Content-Type"]; // 表单方式
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
 
     [manager GET:URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -34,12 +34,12 @@
 
 +(void)POST:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
-    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forKey:@"Content-Type"]; // 表单方式
-    
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+
     [manager POST:URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         complete ? complete(responseObject) : nil;
@@ -53,7 +53,7 @@
 
 +(void)POSTJson:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
@@ -86,11 +86,11 @@
 
 +(void)PUT:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
-    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forKey:@"Content-Type"]; // 表单方式
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
 
     [manager PUT:URL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -105,7 +105,7 @@
 
 +(void)PUTJson:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
@@ -138,12 +138,12 @@
 
 +(void)DELETE:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
 
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
 
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
-    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forKey:@"Content-Type"]; // 表单方式
-    
+    [manager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+
     [manager DELETE:URL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         complete ? complete(responseObject) : nil;
@@ -157,7 +157,7 @@
 
 +(void)DELETEJson:(NSString *)URL params:(NSDictionary *)params complete:(void(^)(id data))complete failure:(void(^)(NSError *error))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
@@ -191,7 +191,7 @@
 + (void)UPLOAD:(NSString *)URL params:(NSDictionary *)params uploadData:(YPFormData *)uploadData progress:(void(^)(NSProgress *uploadProgress))progress complete:(void (^)(id _Nonnull))complete failure:(void (^)(NSError * _Nonnull))failure {
     
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;
@@ -208,7 +208,7 @@
 
 + (void)UPLOADMore:(NSString *)URL params:(NSDictionary *)params uploadDatas:(NSArray<YPFormData *> *)uploadDatas progress:(void(^)(NSProgress *uploadProgress))progress complete:(void (^)(id _Nonnull))complete failure:(void (^)(NSError * _Nonnull))failure {
     
-    NSAssert(strIsEmpty(URL), @"URL is nil");
+    NSAssert(!strIsEmpty(URL), @"URL is nil");
     
     [self networkActivityState:YES];
     AFHTTPSessionManager *manager = [YPSessionManager shareManager].manager;

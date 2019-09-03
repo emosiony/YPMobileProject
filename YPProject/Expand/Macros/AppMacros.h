@@ -123,6 +123,15 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 [View.layer setMasksToBounds:YES]
 
 
+#define WeakSelf() __weak typeof(self) weakself= self
+#define StrongSelf() __strong typeof(self) strongself= weakself
+
+#define HostURLImage(NAME)      [NSURL URLWithString:[NSString stringWithFormat:@"%@",NAME]]
+
+#define IMAGENANED(NAME)        [UIImage imageNamed:NAME]
+/** 商家头像占位图 */
+#define SHOP_ICON_DEFAULT   IMAGENANED(@"default_shop_icon")
+
 
 #pragma mark --
 #pragma mark -- 是否iPad、iphone

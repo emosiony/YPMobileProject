@@ -126,7 +126,7 @@
     return CGRectGetMaxY(self.frame);
 }
 
--(instancetype)viewFromXib
++(instancetype)viewFromXib
 {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
 }

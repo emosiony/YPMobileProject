@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) CGFloat yp_maxY;
 
 
-- (instancetype)viewFromXib;
++ (instancetype)viewFromXib;
 
 - (void)removeAllSubviews;
 

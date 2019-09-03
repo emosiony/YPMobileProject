@@ -15,6 +15,7 @@
 #import "YPAppConfig.h"
 
 #import "YPHomeViewController.h"
+#import "YPDiscoverController.h"
 #import "YPMineViewController.h"
 
 @interface YPBaseTabBarController ()
@@ -40,6 +41,7 @@
 - (void)setTabBarMenuItems {
     
     [self addChildCtrl:[[YPHomeViewController alloc] init] title:@"爆料" image:@"tabbar_search" selectedImage:@"tabbar_search_sel"];
+    [self addChildCtrl:[[YPDiscoverController alloc] init] title:@"发现" image:@"tabbar_search" selectedImage:@"tabbar_search_sel"];
     [self addChildCtrl:[[YPMineViewController alloc] init] title:@"知书" image:@"tabbar_classroom" selectedImage:@"tabbar_classroom_sel"];
 }
 

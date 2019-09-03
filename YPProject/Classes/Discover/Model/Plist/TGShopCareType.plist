@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>code</key>
+		<string>AFTERNOON_MANAGED_CODE</string>
+		<key>name</key>
+		<string>午托</string>
+		<key>click</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>NIGHT_MANAGED_CODE</string>
+		<key>name</key>
+		<string>晚托</string>
+		<key>click</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>FULL_MANAGED_CODE</string>
+		<key>name</key>
+		<string>全托</string>
+		<key>click</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>EARLY_MANAGED_CODE</string>
+		<key>name</key>
+		<string>早教</string>
+		<key>click</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>code</key>
+		<string>HOUSE_MANAGED_CODE</string>
+		<key>name</key>
+		<string>临托</string>
+		<key>click</key>
+		<true/>
+	</dict>
+</array>
+</plist>
