@@ -33,6 +33,8 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:(UIBarButtonSystemItemPlay) target:self action:@selector(changeModalTransStyle)];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -40,6 +42,18 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Cell_ReuseIdentifier forIndexPath:indexPath];
     cell.textLabel.text   = [self.dataList objectAtIndex:indexPath.row];
     return cell;
+}
+
+-(void)changeModalTransStyle {
+    
+    if (@available(iOS 13, *)) {
+        UIUserInterfaceStyle currentStyle = self.traitCollection.userInterfaceStyle;
+        if (currentStyle != UIUserInterfaceStyleDark) {
+            self.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
+        } else {
+            self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+        }
+    }
 }
 
 @end

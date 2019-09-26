@@ -22,7 +22,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = HEXColor(0x123456);
+    
+    if (@available(iOS 13.0, *)) {
+        self.view.backgroundColor = [UIColor colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
+            
+            UIColor *color = HEXColor(0x123456);
+            if (traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+                color = HEXColor(0x567890);
+            }
+            return color;
+        }];
+    } else {
+        self.view.backgroundColor = HEXColor(0x123456);
+    }
     
     UIButton *back = [UIButton new];
     [self.view addSubview:back];
