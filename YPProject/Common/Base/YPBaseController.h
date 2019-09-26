@@ -18,6 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 /** 隐藏 navigationBar 下 的线条 */
 @property (nonatomic,assign) BOOL hiddenNavigationBarShowImage;
 
+
+/// iOS 13 样式 present
+/// @param viewControllerToPresent presentController
+/// @param flag 是否动画
+/// @param completion 完成block
+-(void)presentViewControllerIOS13:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,8 @@
 #import "YPBaseWKWebController.h"
 #import <SDCycleScrollView.h>
 
+#import "YPModalController.h"
+
 #define Banner_Scroll_Height  (kScreenWidth * 9/16)
 
 @interface YPHomeViewController ()
@@ -39,11 +41,9 @@
 
 -(void)pushPage {
     
-    YPBaseWKWebController *page = [[YPBaseWKWebController alloc] init];
-//    page.hiddenNavigationBar = YES;
-    page.url = @"http://baidu.com";
-    page.hiddenNavigationBarShowImage = YES;
-    [self.navigationController pushViewController:page animated:YES];
+
+    YPModalController *modalVC = [[YPModalController alloc] init];
+    [self presentViewController:modalVC animated:YES completion:nil];
 }
 
 -(SDCycleScrollView *)bannerScroll {
@@ -66,6 +66,10 @@
         __weak typeof(self) weakSelf = self;
         _bannerScroll.clickItemOperationBlock = ^(NSInteger currentIndex) {
             NSLog(@"click index == %zd", currentIndex);
+            YPBaseWKWebController *page = [[YPBaseWKWebController alloc] init];
+            page.url = @"http://baidu.com";
+            page.hiddenNavigationBarShowImage = YES;
+            [weakSelf.navigationController pushViewController:page animated:YES];
         };
     }
     return _bannerScroll;

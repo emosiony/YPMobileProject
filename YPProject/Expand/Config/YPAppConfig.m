@@ -10,7 +10,7 @@
 #import "YPAppConfig.h"
 
 #define View_bg_Color       HEXColor(0xF3F3F3)
-#define Nav_bg_Color        HEXColor(0xFFFFFF)
+#define Nav_bg_Color        HEXColor(0x008FF2)
 #define Bar_bg_Color        HEXColor(0xFFFFFF)
 #define Bar_back_image      [UIImage imageNamed:@"back"]
 
@@ -18,7 +18,7 @@
 #define BarItem_selectColor HEXColor(0x333333)
 
 #define Nav_Title_Font      [UIFont boldSystemFontOfSize:18.0f]
-#define Nav_Title_Color     HEXColor(0x333333)
+#define Nav_Title_Color     HEXColor(0xFFFFFF)
 
 @implementation YPAppConfig
 

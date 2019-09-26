@@ -49,4 +49,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+-(void)presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
+    
+    if (@available(iOS 13, *)) {
+        viewControllerToPresent.modalPresentationStyle = UIModalPresentationFullScreen;
+    }
+    
+    [super presentViewController:viewControllerToPresent animated:flag completion:completion];
+}
+
+-(void)presentViewControllerIOS13:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
+    
+    [super presentViewController:viewControllerToPresent animated:flag completion:completion];
+}
+
 @end

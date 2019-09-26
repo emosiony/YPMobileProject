@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		23E50A3F0EBFCD9F41492676 /* libPods-YPProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */; };
+		51BE99C0233CC57700CE8F91 /* YPModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BE99BF233CC57700CE8F91 /* YPModalController.m */; };
 		63052953231E07270011EC80 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052952231E07270011EC80 /* EllipsePageControl.m */; };
 		63052957231E07720011EC80 /* YPDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052956231E07720011EC80 /* YPDiscoverController.m */; };
 		6305295B231E07B30011EC80 /* YPArtScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305295A231E07B30011EC80 /* YPArtScrollView.m */; };
@@ -104,6 +105,8 @@
 		00CB31B5C8ADBC563D9281A4 /* Pods-YPProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectUITests/Pods-YPProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BE99BE233CC57700CE8F91 /* YPModalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPModalController.h; sourceTree = "<group>"; };
+		51BE99BF233CC57700CE8F91 /* YPModalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPModalController.m; sourceTree = "<group>"; };
 		63052951231E07270011EC80 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
 		63052952231E07270011EC80 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
 		63052955231E07720011EC80 /* YPDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDiscoverController.h; sourceTree = "<group>"; };
@@ -584,6 +587,8 @@
 			children = (
 				632B00FB2301726F00540399 /* YPHomeViewController.h */,
 				632B00FC2301726F00540399 /* YPHomeViewController.m */,
+				51BE99BE233CC57700CE8F91 /* YPModalController.h */,
+				51BE99BF233CC57700CE8F91 /* YPModalController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1112,6 +1117,7 @@
 				632B00B32301640F00540399 /* AppDelegate.m in Sources */,
 				630529BC231E141D0011EC80 /* WMMenuItem.m in Sources */,
 				6305297C231E09CB0011EC80 /* TGGradeSelectView.m in Sources */,
+				51BE99C0233CC57700CE8F91 /* YPModalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
