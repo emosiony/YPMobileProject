@@ -16,15 +16,15 @@ PODS:
     - AFNetworking/NSURLSession
   - DZNEmptyDataSet (1.8.1)
   - Masonry (1.1.0)
-  - MJExtension (3.0.17)
+  - MJExtension (3.1.2)
   - MJRefresh (3.2.0)
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - SDCycleScrollView (1.80):
     - SDWebImage (>= 5.0.0)
-  - SDWebImage (5.0.4):
-    - SDWebImage/Core (= 5.0.4)
-  - SDWebImage/Core (5.0.4)
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -56,14 +56,14 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
-  SDWebImage: c739016e4bdf0a4a1f9a04b5e0385395ad63a282
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: d2eaa97a58fcf8edd4dbfe877c3f1795024b9d1a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
