@@ -80,6 +80,8 @@
 		63B1BA032302C2E0002A3A96 /* YPBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1BA022302C2E0002A3A96 /* YPBaseTableController.m */; };
 		63B1BA072302C32C002A3A96 /* YPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1BA062302C32C002A3A96 /* YPTableView.m */; };
 		63B1BA0B2302DB02002A3A96 /* YPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B1BA0A2302DB02002A3A96 /* YPReachability.m */; };
+		63F00C3C232626B000364ADC /* TGSafeInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F00C3B232626B000364ADC /* TGSafeInfoView.m */; };
+		63F00C3F232626D400364ADC /* TGSafeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F00C3E232626D400364ADC /* TGSafeInfoView.xib */; };
 		7228BEFD37CC43A021D8C8EC /* libPods-YPProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */; };
 		7A546997CE780E7E70EF8941 /* libPods-YPProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */; };
 /* End PBXBuildFile section */
@@ -242,6 +244,9 @@
 		63B1BA062302C32C002A3A96 /* YPTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPTableView.m; sourceTree = "<group>"; };
 		63B1BA092302DB02002A3A96 /* YPReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPReachability.h; sourceTree = "<group>"; };
 		63B1BA0A2302DB02002A3A96 /* YPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPReachability.m; sourceTree = "<group>"; };
+		63F00C3A232626B000364ADC /* TGSafeInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSafeInfoView.h; sourceTree = "<group>"; };
+		63F00C3B232626B000364ADC /* TGSafeInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSafeInfoView.m; sourceTree = "<group>"; };
+		63F00C3E232626D400364ADC /* TGSafeInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGSafeInfoView.xib; sourceTree = "<group>"; };
 		7CCCA30A3FC69EA8E5807F25 /* Pods-YPProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectTests/Pods-YPProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2449F20A18AD8E55407B9E2 /* Pods-YPProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProject/Pods-YPProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -585,6 +590,7 @@
 		632B00F123016A7600540399 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				63F00C3D232626B600364ADC /* View */,
 				632B00FB2301726F00540399 /* YPHomeViewController.h */,
 				632B00FC2301726F00540399 /* YPHomeViewController.m */,
 				51BE99BE233CC57700CE8F91 /* YPModalController.h */,
@@ -807,6 +813,16 @@
 			path = YPReachability;
 			sourceTree = "<group>";
 		};
+		63F00C3D232626B600364ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63F00C3A232626B000364ADC /* TGSafeInfoView.h */,
+				63F00C3B232626B000364ADC /* TGSafeInfoView.m */,
+				63F00C3E232626D400364ADC /* TGSafeInfoView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81669308B7B3437B4457154F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -942,6 +958,7 @@
 				63052997231E0AED0011EC80 /* ItemMeau.xib in Resources */,
 				6338C0DD2302871F001FF843 /* imageSet.xcassets in Resources */,
 				63052987231E0A010011EC80 /* TGShopInterest.plist in Resources */,
+				63F00C3F232626D400364ADC /* TGSafeInfoView.xib in Resources */,
 				6305296E231E09A50011EC80 /* TGHomeShopNewCell.xib in Resources */,
 				63052989231E0A010011EC80 /* TGShopMeals.plist in Resources */,
 				632B00BB2301641100540399 /* Assets.xcassets in Resources */,
@@ -1071,6 +1088,7 @@
 				63052966231E09630011EC80 /* TGSchoolInfoModel.m in Sources */,
 				630529BD231E141D0011EC80 /* WMScrollView.m in Sources */,
 				6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */,
+				63F00C3C232626B000364ADC /* TGSafeInfoView.m in Sources */,
 				6305298C231E0A440011EC80 /* UIButton+BackgroundColor.m in Sources */,
 				630529AD231E0B9C0011EC80 /* TGShopHeaderView.m in Sources */,
 				63A39E152303ECDF00D5F1B6 /* UIColor+Extension.m in Sources */,

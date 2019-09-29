@@ -11,6 +11,7 @@
 #import "YPHomeViewController.h"
 #import "YPBaseWKWebController.h"
 #import <SDCycleScrollView.h>
+#import "TGSafeInfoView.h"
 
 #import "YPModalController.h"
 
@@ -20,6 +21,7 @@
 <SDCycleScrollViewDelegate>
 
 @property (nonatomic,strong) SDCycleScrollView *bannerScroll;
+@property (nonatomic,strong) TGSafeInfoView *safeView;
 
 @end
 
@@ -31,11 +33,35 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:(UIBarButtonSystemItemPlay) target:self action:@selector(pushPage)];
     
+    self.view.backgroundColor = HEXColor(0xF3F3F3);
     [self.view addSubview:self.bannerScroll];
-    
+    [self.view addSubview:self.safeView];
+
     [self.bannerScroll mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(self.view);
         make.height.mas_equalTo(Banner_Scroll_Height);
+    }];
+    
+    [self.safeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.bannerScroll.mas_bottom).offset(10);
+        make.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(self.safeView.mj_h);
+    }];
+    
+    __weak typeof(self) weakSelf = self;
+    [self.safeView setNumChangeBlock:^(double num) {
+        NSLog(@"num === %lf", num);
+    } chooseBlock:^(BOOL isSelect) {
+        weakSelf.safeView.showType = isSelect ? TGSafeShowType_showCourseSel : TGSafeShowType_showCourseNor;
+    } tapExplainBlock:^(NSString * _Nonnull url) {
+        [[[UIAlertView alloc] initWithTitle:@"提示" message:url delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show];
+    } numWarmBlock:^(BOOL isAdd) {
+        NSString *msg = isAdd ? @"不能超过可投时效" : @"不能小于1个月";
+        [[[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show];
+    } updateHeight:^(CGFloat safeHeight) {
+        [weakSelf.safeView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(safeHeight);
+        }];
     }];
 }
 
@@ -73,6 +99,17 @@
         };
     }
     return _bannerScroll;
+}
+
+-(TGSafeInfoView *)safeView {
+    
+    if (_safeView == nil) {
+        _safeView = [TGSafeInfoView viewFromXib];
+        _safeView.minNum   = 1.0f;
+        _safeView.maxNum   = 99.0f;
+        _safeView.showType = TGSafeShowType_showCourseNor;
+    }
+    return _safeView;
 }
 
 @end
