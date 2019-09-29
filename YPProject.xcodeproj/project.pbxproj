@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,6 +62,7 @@
 		6338C0E523028F35001FF843 /* YPInterfaceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E423028F35001FF843 /* YPInterfaceURL.m */; };
 		6338C0E923029457001FF843 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E823029457001FF843 /* DeviceInfo.m */; };
 		6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0EB23029A63001FF843 /* YPSessionManager.m */; };
+		637E60BA2340883400544C61 /* UIViewController+ModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E60B92340883400544C61 /* UIViewController+ModalStyle.m */; };
 		639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */; };
 		639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */; };
 		63A39E0F2303D95A00D5F1B6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A39E0D2303D95A00D5F1B6 /* UIImage+Color.m */; };
@@ -208,6 +209,8 @@
 		6338C0E823029457001FF843 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		6338C0EA23029A63001FF843 /* YPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSessionManager.h; sourceTree = "<group>"; };
 		6338C0EB23029A63001FF843 /* YPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSessionManager.m; sourceTree = "<group>"; };
+		637E60B82340883400544C61 /* UIViewController+ModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalStyle.h"; sourceTree = "<group>"; };
+		637E60B92340883400544C61 /* UIViewController+ModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalStyle.m"; sourceTree = "<group>"; };
 		639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLBackButton.h"; sourceTree = "<group>"; };
 		639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WLBackButton.m"; sourceTree = "<group>"; };
 		639AECCC23039E79002B10C5 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
@@ -692,6 +695,8 @@
 				639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */,
 				639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */,
 				639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */,
+				637E60B82340883400544C61 /* UIViewController+ModalStyle.h */,
+				637E60B92340883400544C61 /* UIViewController+ModalStyle.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1016,15 +1021,22 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YPProject/Pods-YPProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YPProject/Pods-YPProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YPProject/Pods-YPProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YPProject/Pods-YPProject-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPProject/Pods-YPProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		81AAEEC0161133B870170743 /* [CP] Check Pods Manifest.lock */ = {
@@ -1114,6 +1126,7 @@
 				632B01032301822000540399 /* YPAppHealper.m in Sources */,
 				630529A0231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m in Sources */,
 				630529A8231E0B480011EC80 /* TGHomeSchoolController.m in Sources */,
+				637E60BA2340883400544C61 /* UIViewController+ModalStyle.m in Sources */,
 				6305297B231E09CB0011EC80 /* TGCourseChooseTypeCell.m in Sources */,
 				6305299E231E0AF80011EC80 /* TGHomeTopView.m in Sources */,
 				63052969231E09750011EC80 /* TGProductOptionModel.m in Sources */,

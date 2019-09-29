@@ -14,6 +14,7 @@
 #import "TGSafeInfoView.h"
 
 #import "YPModalController.h"
+#import "UIViewController+ModalStyle.h"
 
 #define Banner_Scroll_Height  (kScreenWidth * 9/16)
 
@@ -67,7 +68,6 @@
 
 -(void)pushPage {
     
-
     YPModalController *modalVC = [[YPModalController alloc] init];
     [self presentViewController:modalVC animated:YES completion:nil];
 }
