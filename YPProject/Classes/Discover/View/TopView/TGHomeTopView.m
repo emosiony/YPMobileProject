@@ -145,6 +145,9 @@
     for (NSDictionary *dic in _bottomList) {
         [adArr addObject:dic[@"thumb"]];
     }
+    [self.bottomScrollView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(adArr.count ? MENU_SCROLL_HEIGHT : 0);
+    }];
     self.bottomScrollView.imageURLStringsGroup = adArr;
 }
 
@@ -237,7 +240,7 @@
         _bottomScrollView.pageControlDotSize            = CGSizeMake(5, 5);
         _bottomScrollView.currentPageDotColor           = HEXColor(0x01A1ED);
         _bottomScrollView.pageDotColor                  = HEXColor(0xcccccc);
-        _bottomScrollView.backgroundColor               = HEXColor(0xF3F3F3);
+        _bottomScrollView.backgroundColor               = HEXColor(0xFFFFFF);
         _bottomScrollView.bannerImageViewContentMode    = UIViewContentModeScaleAspectFill;
         _bottomScrollView.pageControlStyle              = SDCycleScrollViewPageContolStyleClassic;
         _bottomScrollView.pageControlAliment            = SDCycleScrollViewPageContolAlimentCenter;
@@ -265,6 +268,7 @@
     
     CGFloat contentHeight = Line_Margin + TOP_SCROLL_HEIGHT + Line_Margin + MENU_SCROLL_HEIGHT + Line_Margin + BOTTOM_SCROLL_HEIGHT + Line_Margin + Line_Margin;
     contentHeight += self.menuList.count > Menu_Page_Count ? 5.0f : 0.0f;
+    contentHeight -= self.bottomList.count > 0 ? 0 : (BOTTOM_SCROLL_HEIGHT + Line_Margin);
     return contentHeight;
 }
 

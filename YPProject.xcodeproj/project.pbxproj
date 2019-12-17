@@ -62,6 +62,12 @@
 		6338C0E523028F35001FF843 /* YPInterfaceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E423028F35001FF843 /* YPInterfaceURL.m */; };
 		6338C0E923029457001FF843 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E823029457001FF843 /* DeviceInfo.m */; };
 		6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0EB23029A63001FF843 /* YPSessionManager.m */; };
+		634240FF239E542D008E5923 /* TGShopDetailDiscountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */; };
+		63424100239E542D008E5923 /* TGShopDetailDiscountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */; };
+		63424101239E542D008E5923 /* TGShopDetailDiscountItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */; };
+		63424104239E59C2008E5923 /* TGShopDetailDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 63424103239E59C2008E5923 /* TGShopDetailDiscount.m */; };
+		63424108239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */; };
+		63424109239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */; };
 		637E60BA2340883400544C61 /* UIViewController+ModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E60B92340883400544C61 /* UIViewController+ModalStyle.m */; };
 		639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */; };
 		639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */; };
@@ -209,6 +215,16 @@
 		6338C0E823029457001FF843 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		6338C0EA23029A63001FF843 /* YPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSessionManager.h; sourceTree = "<group>"; };
 		6338C0EB23029A63001FF843 /* YPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSessionManager.m; sourceTree = "<group>"; };
+		634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscountView.m; sourceTree = "<group>"; };
+		634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscountItem.m; sourceTree = "<group>"; };
+		634240FC239E542D008E5923 /* TGShopDetailDiscountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscountView.h; sourceTree = "<group>"; };
+		634240FD239E542D008E5923 /* TGShopDetailDiscountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscountItem.h; sourceTree = "<group>"; };
+		634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGShopDetailDiscountItem.xib; sourceTree = "<group>"; };
+		63424102239E59C2008E5923 /* TGShopDetailDiscount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscount.h; sourceTree = "<group>"; };
+		63424103239E59C2008E5923 /* TGShopDetailDiscount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscount.m; sourceTree = "<group>"; };
+		63424105239E5AA2008E5923 /* TGSHOPDetailDiscountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSHOPDetailDiscountCell.h; sourceTree = "<group>"; };
+		63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSHOPDetailDiscountCell.m; sourceTree = "<group>"; };
+		63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGSHOPDetailDiscountCell.xib; sourceTree = "<group>"; };
 		637E60B82340883400544C61 /* UIViewController+ModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalStyle.h"; sourceTree = "<group>"; };
 		637E60B92340883400544C61 /* UIViewController+ModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalStyle.m"; sourceTree = "<group>"; };
 		639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLBackButton.h"; sourceTree = "<group>"; };
@@ -405,11 +421,11 @@
 		63052998231E0AF80011EC80 /* TopView */ = {
 			isa = PBXGroup;
 			children = (
-				63052999231E0AF80011EC80 /* TGHomeTopView.m */,
 				6305299A231E0AF80011EC80 /* TGHomeHeaderRecommendItem.h */,
+				6305299D231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m */,
 				6305299B231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib */,
 				6305299C231E0AF80011EC80 /* TGHomeTopView.h */,
-				6305299D231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m */,
+				63052999231E0AF80011EC80 /* TGHomeTopView.m */,
 			);
 			path = TopView;
 			sourceTree = "<group>";
@@ -593,6 +609,7 @@
 		632B00F123016A7600540399 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				634240F4239E4CC4008E5923 /* Discount */,
 				63F00C3D232626B600364ADC /* View */,
 				632B00FB2301726F00540399 /* YPHomeViewController.h */,
 				632B00FC2301726F00540399 /* YPHomeViewController.m */,
@@ -677,6 +694,23 @@
 				6338C0E823029457001FF843 /* DeviceInfo.m */,
 			);
 			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		634240F4239E4CC4008E5923 /* Discount */ = {
+			isa = PBXGroup;
+			children = (
+				634240FD239E542D008E5923 /* TGShopDetailDiscountItem.h */,
+				634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */,
+				634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */,
+				634240FC239E542D008E5923 /* TGShopDetailDiscountView.h */,
+				634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */,
+				63424102239E59C2008E5923 /* TGShopDetailDiscount.h */,
+				63424103239E59C2008E5923 /* TGShopDetailDiscount.m */,
+				63424105239E5AA2008E5923 /* TGSHOPDetailDiscountCell.h */,
+				63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */,
+				63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */,
+			);
+			path = Discount;
 			sourceTree = "<group>";
 		};
 		639AECC723039E28002B10C5 /* Category */ = {
@@ -972,6 +1006,8 @@
 				63052986231E0A010011EC80 /* TGShopCareType.plist in Resources */,
 				63052996231E0AED0011EC80 /* MenuHeadView.xib in Resources */,
 				63052988231E0A010011EC80 /* TGShopCoach.plist in Resources */,
+				63424101239E542D008E5923 /* TGShopDetailDiscountItem.xib in Resources */,
+				63424109239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib in Resources */,
 				6305297F231E09CB0011EC80 /* TGCourseChooseTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1099,6 +1135,7 @@
 				630529BE231E141D0011EC80 /* WMMenuView.m in Sources */,
 				63052966231E09630011EC80 /* TGSchoolInfoModel.m in Sources */,
 				630529BD231E141D0011EC80 /* WMScrollView.m in Sources */,
+				634240FF239E542D008E5923 /* TGShopDetailDiscountView.m in Sources */,
 				6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */,
 				63F00C3C232626B000364ADC /* TGSafeInfoView.m in Sources */,
 				6305298C231E0A440011EC80 /* UIButton+BackgroundColor.m in Sources */,
@@ -1107,8 +1144,10 @@
 				63052980231E09CB0011EC80 /* TGFilterContentView.m in Sources */,
 				63B1BA032302C2E0002A3A96 /* YPBaseTableController.m in Sources */,
 				6305295F231E09230011EC80 /* NSString+Common.m in Sources */,
+				63424104239E59C2008E5923 /* TGShopDetailDiscount.m in Sources */,
 				6305297D231E09CB0011EC80 /* TGShopFilterView.m in Sources */,
 				6338C0DC2302871F001FF843 /* YPProgressHUD.m in Sources */,
+				63424108239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m in Sources */,
 				63A39E1A2303FF6100D5F1B6 /* NSError+Extension.m in Sources */,
 				63052994231E0AED0011EC80 /* ItemMeau.m in Sources */,
 				63B1B9F62302BC31002A3A96 /* YPBaseNavitionController.m in Sources */,
@@ -1119,6 +1158,7 @@
 				63B1B9EC2302A47B002A3A96 /* YPFormData.m in Sources */,
 				6338C0E523028F35001FF843 /* YPInterfaceURL.m in Sources */,
 				63B1B9F92302BFA3002A3A96 /* YPBaseTabBarController.m in Sources */,
+				63424100239E542D008E5923 /* TGShopDetailDiscountItem.m in Sources */,
 				6338C0E923029457001FF843 /* DeviceInfo.m in Sources */,
 				6305295B231E07B30011EC80 /* YPArtScrollView.m in Sources */,
 				63B1BA002302C095002A3A96 /* TransitionController.m in Sources */,

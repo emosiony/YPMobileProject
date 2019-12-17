@@ -46,14 +46,14 @@
 
 -(void)changeModalTransStyle {
     
-    if (@available(iOS 13, *)) {
-        UIUserInterfaceStyle currentStyle = self.traitCollection.userInterfaceStyle;
-        if (currentStyle != UIUserInterfaceStyleDark) {
-            self.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-        } else {
-            self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
-        }
-    }
+//    if (@available(iOS 13, *)) {
+//        UIUserInterfaceStyle currentStyle = self.traitCollection.userInterfaceStyle;
+//        if (currentStyle != UIUserInterfaceStyleDark) {
+//            self.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
+//        } else {
+//            self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+//        }
+//    }
 }
 
 @end
