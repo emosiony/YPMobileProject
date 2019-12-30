@@ -746,13 +746,13 @@
 			isa = PBXGroup;
 			children = (
 				63D8882C23B9A67F00DEB0C1 /* Category */,
-				63D8883123B9A67F00DEB0C1 /* Other */,
-				63D8883623B9A67F00DEB0C1 /* Dependency */,
-				63D8883923B9A67F00DEB0C1 /* PYPhotoBrowser.h */,
 				63D8883A23B9A67F00DEB0C1 /* Controller */,
+				63D8883623B9A67F00DEB0C1 /* Dependency */,
 				63D8884323B9A67F00DEB0C1 /* Model */,
-				63D8884623B9A67F00DEB0C1 /* View */,
+				63D8883123B9A67F00DEB0C1 /* Other */,
+				63D8883923B9A67F00DEB0C1 /* PYPhotoBrowser.h */,
 				63D8884F23B9A67F00DEB0C1 /* PYPhotosView.bundle */,
+				63D8884623B9A67F00DEB0C1 /* View */,
 			);
 			path = PYPhotoBrowser;
 			sourceTree = "<group>";
