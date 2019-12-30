@@ -15,6 +15,7 @@
 #import "YPInterfaceURL.h"
 #import "YPAppHealper.h"
 #import "YPHttpTool.h"
+#import "YPAppBaseInfo.h"
 
 #pragma mark -- Tools
 #import "YPProgressHUD.h"
