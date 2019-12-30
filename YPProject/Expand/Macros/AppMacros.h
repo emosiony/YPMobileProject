@@ -247,10 +247,10 @@ return _instance; \
 
 
 //时间戳
-#define currentTime [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
+#define kCurrentTime [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
 
 //获取当前语言
-#define currentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 //多语言
 #define   locStr(str)   NSLocalizedString(str, nil)

@@ -27,6 +27,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要获取相机</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App需要定位获取您的位置</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App需要获取您的麦克风</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App需要为您添加图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要获取相册</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -42,5 +52,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

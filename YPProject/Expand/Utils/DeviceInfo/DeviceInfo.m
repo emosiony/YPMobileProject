@@ -23,6 +23,13 @@
     return appCurName;
 }
 
+/** App Bundle ID */
++ (NSString *)getAppBundleID {
+    
+    NSString *appBundleID = [[NSBundle mainBundle] bundleIdentifier];
+    return appBundleID;
+}
+
 /** app 版本号 */
 + (NSString *)getAppSystemVersion {
     

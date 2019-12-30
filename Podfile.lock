@@ -14,8 +14,26 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - DACircularProgress (2.3.1)
   - DZNEmptyDataSet (1.8.1)
+  - FLAnimatedImage (1.0.12)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - MJExtension (3.1.2)
   - MJRefresh (3.2.0)
   - Reachability (3.2)
@@ -26,24 +44,34 @@ PODS:
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
   - SVProgressHUD (2.2.5)
+  - zhPopupController (1.0.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - BlocksKit
+  - DACircularProgress
   - DZNEmptyDataSet
+  - FLAnimatedImage
   - Masonry
+  - MBProgressHUD
   - MJExtension
   - MJRefresh
   - Reachability
   - ReactiveObjC
-  - SDCycleScrollView
+  - SDCycleScrollView (~> 1.80)
   - SDWebImage
   - SVProgressHUD
+  - zhPopupController
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - BlocksKit
+    - DACircularProgress
     - DZNEmptyDataSet
+    - FLAnimatedImage
     - Masonry
+    - MBProgressHUD
     - MJExtension
     - MJRefresh
     - Reachability
@@ -51,11 +79,16 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - SVProgressHUD
+    - zhPopupController
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
@@ -63,7 +96,8 @@ SPEC CHECKSUMS:
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  zhPopupController: 4e6bd734062cb9c7ebe8113568550bade168bed7
 
-PODFILE CHECKSUM: d2eaa97a58fcf8edd4dbfe877c3f1795024b9d1a
+PODFILE CHECKSUM: 4d7662a67d20ebf774e95a4b6b60fbaf90fc3faf
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

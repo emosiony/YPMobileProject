@@ -52,7 +52,7 @@ static YPSessionManager *_install;
     [manager.requestSerializer setValue:[DeviceInfo getDeviceType] forHTTPHeaderField:@"phone-type"];      // 手机型号
     [manager.requestSerializer setValue:@"1" forHTTPHeaderField:@"platform"];                              // 平台类型 1:iOS 2:Android
     
-    NSString *user_agent = [@"TGTeacher" stringByAppendingFormat:@"/%@ (iPhone;iOS%@;%@;%@;%@)", [DeviceInfo getAppSystemVersion], [DeviceInfo getDeviceSystemVersion], [DeviceInfo getDeviceType], [DeviceInfo getDeviceScale], @"AppStore"];
+    NSString *user_agent = [[DeviceInfo getAppBundleID] stringByAppendingFormat:@"/%@ (iPhone;iOS%@;%@;%@;%@)", [DeviceInfo getAppSystemVersion], [DeviceInfo getDeviceSystemVersion], [DeviceInfo getDeviceType], [DeviceInfo getDeviceScale], @"AppStore"];
     [manager.requestSerializer setValue:user_agent forHTTPHeaderField:@"User-Agent"];
     [manager.requestSerializer setValue:[DeviceInfo getAppSystemVersion] forHTTPHeaderField:@"version"];
 }
@@ -69,7 +69,7 @@ static YPSessionManager *_install;
     [request setValue:[DeviceInfo getDeviceType] forHTTPHeaderField:@"phone-type"];      // 手机型号
     [request setValue:@"1" forHTTPHeaderField:@"platform"];                              // 平台类型 1:iOS 2:Android
     
-    NSString *user_agent = [@"TGTeacher" stringByAppendingFormat:@"/%@ (iPhone;iOS%@;%@;%@;%@)", [DeviceInfo getAppSystemVersion], [DeviceInfo getDeviceSystemVersion], [DeviceInfo getDeviceType], [DeviceInfo getDeviceScale], @"AppStore"];
+    NSString *user_agent = [[DeviceInfo getAppBundleID] stringByAppendingFormat:@"/%@ (iPhone;iOS%@;%@;%@;%@)", [DeviceInfo getAppSystemVersion], [DeviceInfo getDeviceSystemVersion], [DeviceInfo getDeviceType], [DeviceInfo getDeviceScale], @"AppStore"];
     [request setValue:user_agent forHTTPHeaderField:@"User-Agent"];
     [request setValue:[DeviceInfo getAppSystemVersion] forHTTPHeaderField:@"version"];
 }

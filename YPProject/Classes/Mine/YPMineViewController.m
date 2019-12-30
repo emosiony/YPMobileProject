@@ -23,13 +23,6 @@
     self.emptyDesc = @"O(∩_∩)O哈哈~， 没数据啦";
     
     [self setEmptyDelegate];
-//
-//    for (NSInteger i = 0; i < 20; i++) {
-//        [self.dataList addObject:[NSString stringWithFormat:@"%zd", i]];
-//    }
-//
-//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:Cell_ReuseIdentifier];
-    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
@@ -42,18 +35,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Cell_ReuseIdentifier forIndexPath:indexPath];
     cell.textLabel.text   = [self.dataList objectAtIndex:indexPath.row];
     return cell;
-}
-
--(void)changeModalTransStyle {
-    
-//    if (@available(iOS 13, *)) {
-//        UIUserInterfaceStyle currentStyle = self.traitCollection.userInterfaceStyle;
-//        if (currentStyle != UIUserInterfaceStyleDark) {
-//            self.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-//        } else {
-//            self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
-//        }
-//    }
 }
 
 @end

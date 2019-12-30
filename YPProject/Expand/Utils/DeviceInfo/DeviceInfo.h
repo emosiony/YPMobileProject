@@ -15,6 +15,9 @@
 /** App Name */
 + (NSString *)getAppCurName;
 
+/** App Bundle ID */
++ (NSString *)getAppBundleID;
+
 /** app 版本号 */
 + (NSString *)getAppSystemVersion;
 

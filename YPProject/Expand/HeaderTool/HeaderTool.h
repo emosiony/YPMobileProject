@@ -27,7 +27,7 @@
 #import <MJExtension.h>
 #import <Masonry.h>
 #import <ReactiveObjC.h>
-
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #pragma mark -- Category
 #import "UIImage+Color.h"
