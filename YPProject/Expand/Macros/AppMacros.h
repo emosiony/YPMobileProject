@@ -91,20 +91,20 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 
 
 #pragma mark -- View 坐标(x,y)和宽高(width,height)
-#define X(v)                    (v).frame.origin.x
-#define Y(v)                    (v).frame.origin.y
-#define WIDTH(v)                (v).frame.size.width
-#define HEIGHT(v)               (v).frame.size.height
-#define BWIDTH(v)               (v).bounds.size.width
-#define BHEIGHT(v)              (v).bounds.size.height
-#define MinX(v)                 CGRectGetMinX((v).frame)
-#define MinY(v)                 CGRectGetMinY((v).frame)
+#define YP_X(v)                    (v).frame.origin.x
+#define YP_Y(v)                    (v).frame.origin.y
+#define YP_WIDTH(v)                (v).frame.size.width
+#define YP_HEIGHT(v)               (v).frame.size.height
+#define YP_BWIDTH(v)               (v).bounds.size.width
+#define YP_BHEIGHT(v)              (v).bounds.size.height
+#define YP_MinX(v)                 CGRectGetMinX((v).frame)
+#define YP_MinY(v)                 CGRectGetMinY((v).frame)
 
-#define MidX(v)                 CGRectGetMidX((v).frame)
-#define MidY(v)                 CGRectGetMidY((v).frame)
+#define YP_MidX(v)                 CGRectGetMidX((v).frame)
+#define YP_MidY(v)                 CGRectGetMidY((v).frame)
 
-#define MaxX(v)                 CGRectGetMaxX((v).frame)
-#define MaxY(v)                 CGRectGetMaxY((v).frame)
+#define YP_MaxX(v)                 CGRectGetMaxX((v).frame)
+#define YP_MaxY(v)                 CGRectGetMaxY((v).frame)
 
 
 #pragma mark -- 设置 View 圆角 和 边框
@@ -125,12 +125,6 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 
 #define WeakSelf() __weak typeof(self) weakself= self
 #define StrongSelf() __strong typeof(self) strongself= weakself
-
-#define HostURLImage(NAME)      [NSURL URLWithString:[NSString stringWithFormat:@"%@",NAME]]
-
-#define IMAGENANED(NAME)        [UIImage imageNamed:NAME]
-/** 商家头像占位图 */
-#define SHOP_ICON_DEFAULT   IMAGENANED(@"default_shop_icon")
 
 
 #pragma mark --
@@ -183,7 +177,7 @@ return _instance; \
 #pragma mark --
 #pragma mark -- 版本比较
 /** 当前版本 */
-#define kSystemVersion          ([[UIDevice currentDevice] systemVersion])
+#define kSystemVersion           ([[UIDevice currentDevice] systemVersion])
 #define kSystemVersionF          ([[[UIDevice currentDevice] systemVersion] floatValue])
 #define kSystemVersionD          ([[[UIDevice currentDevice] systemVersion] doubleValue])
 
@@ -194,12 +188,14 @@ return _instance; \
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([kSystemVersion compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([kSystemVersion compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-/* 是否大于等于IOS7 */
+/* 是否大于等于 IOS 7 */
 #define isIOS7              (kSystemVersionF >= 7.0)
-/* 是否大于等于IOS8 */
+/* 是否大于等于 IOS 8 */
 #define isIOS8              (kSystemVersionF >=8.0)
-/* 是否大于IOS9 */
+/* 是否大于等于 IOS 9 */
 #define isIOS9              (kSystemVersionF >=9.0)
+/** 是否大于等于 iOS 13 */
+#define isIOS13             (kSystemVersionF >=13.0)
 /* 是否大于等于某个版本 */
 #define isIOS(version)      (kSystemVersionF >= (version))
 
@@ -228,11 +224,11 @@ return _instance; \
 
 #pragma mark --
 #pragma mark -- 通知相关
-#define kNotificationCenter  [NSNotificationCenter defaultCenter]
-#define kNOTIF_ADD(SEL, n, o)  [kNotificationCenter addObserver:self selector:@selector(SEL) name:n object:o]
-#define kNOTIF_POST(n, o, i) [kNotificationCenter postNotificationName:n object:o userInfo:i]
-#define kNOTIF_REMV(n, o)    [kNotificationCenter removeObserver:self name:n object:o]
-#define kNOTIF_REMV_All()    [kNotificationCenter removeObserver:self]
+#define kNotificationCenter     [NSNotificationCenter defaultCenter]
+#define kNOTIF_ADD(SEL, n, o)   [kNotificationCenter addObserver:self selector:@selector(SEL) name:n object:o]
+#define kNOTIF_POST(n, o, i)    [kNotificationCenter postNotificationName:n object:o userInfo:i]
+#define kNOTIF_REMV(n, o)       [kNotificationCenter removeObserver:self name:n object:o]
+#define kNOTIF_REMV_All()       [kNotificationCenter removeObserver:self]
 
 
 /**
@@ -277,7 +273,7 @@ return _instance; \
 
 #define ShopDefaultImage        [UIImage imageNamed:@"commu_album"]
 #define UserDefaultImage        [UIImage imageNamed:@"default_head"]
-#define IconImage               [UIImage imageNamed:@"icon"]
+#define IconImage               [UIImage imageNamed:@"AppIcon"]
 
 
 #pragma mark --
@@ -350,6 +346,8 @@ return _instance; \
 #define StringFromDouble(s)     [NSString stringWithFormat:@"%lf",s]
 #define StringVar(var)          [NSString stringWithFormat:@"%s",#var]
 
+#pragma mark --
+#pragma mark -- URL
 #define URLFromString(s)        [NSURL URLWithString:s]
 
 #endif /* AppMacros_h */

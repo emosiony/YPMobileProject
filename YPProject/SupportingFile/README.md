@@ -1,4 +1,4 @@
-#  项目使用总结
+#  项目使用总览
 
 1、基类 继承 YPBaseController 、
 2、tableView Controller 继承 YPBaseTableController
@@ -18,3 +18,4 @@
 13、各种自定义弹窗 可借鉴使用 zhPopupController
 14、网络监听 YPReachability 基于  Reachability 
 15、WMPageController 用于 类似 新闻类导航栏 ，常用与在订单模块 等
+16、YPAppBaseInfo 用于存放 登录状态和 当前登录用户等信息 

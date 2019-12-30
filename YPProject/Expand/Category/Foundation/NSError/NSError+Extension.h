@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(instancetype)errorCode:(NSInteger)code errorDesc:(NSString *)errorDesc;
 
+/** 网络请求 失败 的 error 解析 */
++(instancetype)errorWithErrorCode:(NSError *)error;
+
+//网络请求错误函数
++(NSString *)errorTipHandleWithCode:(NSError *)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

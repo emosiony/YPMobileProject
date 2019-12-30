@@ -73,6 +73,8 @@
 		63D8886223B9A67F00DEB0C1 /* PYPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8884E23B9A67F00DEB0C1 /* PYPhotoView.m */; };
 		63D8886323B9A67F00DEB0C1 /* PYPhotosView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63D8884F23B9A67F00DEB0C1 /* PYPhotosView.bundle */; };
 		63D8886723B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8886623B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		63D8886F23B9D6C800DEB0C1 /* NSString+URLParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8886E23B9D6C800DEB0C1 /* NSString+URLParams.m */; };
+		63D8887223B9DA6400DEB0C1 /* YPAppBaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8887123B9DA6400DEB0C1 /* YPAppBaseInfo.m */; };
 		7228BEFD37CC43A021D8C8EC /* libPods-YPProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */; };
 		7A546997CE780E7E70EF8941 /* libPods-YPProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */; };
 /* End PBXBuildFile section */
@@ -232,6 +234,10 @@
 		63D8886523B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		63D8886623B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		63D8886C23B9AC4200DEB0C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		63D8886D23B9D6C800DEB0C1 /* NSString+URLParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URLParams.h"; sourceTree = "<group>"; };
+		63D8886E23B9D6C800DEB0C1 /* NSString+URLParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLParams.m"; sourceTree = "<group>"; };
+		63D8887023B9DA6400DEB0C1 /* YPAppBaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPAppBaseInfo.h; sourceTree = "<group>"; };
+		63D8887123B9DA6400DEB0C1 /* YPAppBaseInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPAppBaseInfo.m; sourceTree = "<group>"; };
 		7CCCA30A3FC69EA8E5807F25 /* Pods-YPProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectTests/Pods-YPProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2449F20A18AD8E55407B9E2 /* Pods-YPProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProject/Pods-YPProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +297,8 @@
 			children = (
 				6305295E231E09230011EC80 /* NSString+Common.h */,
 				6305295D231E09230011EC80 /* NSString+Common.m */,
+				63D8886D23B9D6C800DEB0C1 /* NSString+URLParams.h */,
+				63D8886E23B9D6C800DEB0C1 /* NSString+URLParams.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -400,6 +408,7 @@
 		632B00E52301647100540399 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				63D8887323B9DA6900DEB0C1 /* AppInfo */,
 				639AECC723039E28002B10C5 /* Category */,
 				6338C0E223028EF1001FF843 /* Const */,
 				632B00F923016E7A00540399 /* HeaderTool */,
@@ -850,6 +859,15 @@
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
+		63D8887323B9DA6900DEB0C1 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				63D8887023B9DA6400DEB0C1 /* YPAppBaseInfo.h */,
+				63D8887123B9DA6400DEB0C1 /* YPAppBaseInfo.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
 		81669308B7B3437B4457154F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1113,6 +1131,7 @@
 				6338C0DC2302871F001FF843 /* YPProgressHUD.m in Sources */,
 				63D8885823B9A67F00DEB0C1 /* PYProgressView.m in Sources */,
 				63D8885923B9A67F00DEB0C1 /* PYPhotoBrowserConst.m in Sources */,
+				63D8887223B9DA6400DEB0C1 /* YPAppBaseInfo.m in Sources */,
 				63A39E1A2303FF6100D5F1B6 /* NSError+Extension.m in Sources */,
 				63D8886023B9A67F00DEB0C1 /* PYPhotoBrowseView.m in Sources */,
 				63B1B9F62302BC31002A3A96 /* YPBaseNavitionController.m in Sources */,
@@ -1136,6 +1155,7 @@
 				63D8885A23B9A67F00DEB0C1 /* PYPhotosViewController.m in Sources */,
 				63D8885223B9A67F00DEB0C1 /* CLPlayerMaskView.m in Sources */,
 				63A39E262304112400D5F1B6 /* YPBaseWKWebController.m in Sources */,
+				63D8886F23B9D6C800DEB0C1 /* NSString+URLParams.m in Sources */,
 				63D8885023B9A67F00DEB0C1 /* CLPlayerViewController.m in Sources */,
 				630529BB231E141D0011EC80 /* WMPageController.m in Sources */,
 				632B00EC2301665B00540399 /* YPLoginViewController.m in Sources */,

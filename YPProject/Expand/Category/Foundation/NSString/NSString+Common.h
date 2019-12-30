@@ -64,10 +64,10 @@ char pinyinFirstLetter(unsigned short hanzi);
 //以指定条件判断是否包含给定的字符串
 - (BOOL)containsString:(NSString *)str Options:(NSStringCompareOptions)compareOptions;
 
-//判断字符串是否相同，忽略大小写
+/** 判断字符串是否相同，忽略大小写 */
 - (BOOL)equalsString:(NSString *)str;
 
-
+/** 表情 */
 - (NSString *)emjoiText;
 
 
@@ -82,7 +82,6 @@ char pinyinFirstLetter(unsigned short hanzi);
 
 
 // 是否带有表情府
-
 - (NSUInteger)utf8Length;
 
 - (BOOL)isContainsEmoji;
