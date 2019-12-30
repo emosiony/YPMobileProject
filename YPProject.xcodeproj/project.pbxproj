@@ -8,39 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		23E50A3F0EBFCD9F41492676 /* libPods-YPProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */; };
-		51BE99C0233CC57700CE8F91 /* YPModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BE99BF233CC57700CE8F91 /* YPModalController.m */; };
 		63052953231E07270011EC80 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052952231E07270011EC80 /* EllipsePageControl.m */; };
 		63052957231E07720011EC80 /* YPDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052956231E07720011EC80 /* YPDiscoverController.m */; };
-		6305295B231E07B30011EC80 /* YPArtScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305295A231E07B30011EC80 /* YPArtScrollView.m */; };
 		6305295F231E09230011EC80 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305295D231E09230011EC80 /* NSString+Common.m */; };
-		63052965231E09630011EC80 /* TGShopInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052963231E09630011EC80 /* TGShopInfoModel.m */; };
-		63052966231E09630011EC80 /* TGSchoolInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052964231E09630011EC80 /* TGSchoolInfoModel.m */; };
-		63052969231E09750011EC80 /* TGProductOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052968231E09750011EC80 /* TGProductOptionModel.m */; };
-		6305296E231E09A50011EC80 /* TGHomeShopNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6305296B231E09A50011EC80 /* TGHomeShopNewCell.xib */; };
-		6305296F231E09A50011EC80 /* TGHomeShopNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305296D231E09A50011EC80 /* TGHomeShopNewCell.m */; };
-		6305297B231E09CB0011EC80 /* TGCourseChooseTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052971231E09CA0011EC80 /* TGCourseChooseTypeCell.m */; };
-		6305297C231E09CB0011EC80 /* TGGradeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052973231E09CB0011EC80 /* TGGradeSelectView.m */; };
-		6305297D231E09CB0011EC80 /* TGShopFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052974231E09CB0011EC80 /* TGShopFilterView.m */; };
-		6305297E231E09CB0011EC80 /* TGShopFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63052976231E09CB0011EC80 /* TGShopFilterView.xib */; };
-		6305297F231E09CB0011EC80 /* TGCourseChooseTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63052977231E09CB0011EC80 /* TGCourseChooseTypeCell.xib */; };
-		63052980231E09CB0011EC80 /* TGFilterContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052978231E09CB0011EC80 /* TGFilterContentView.m */; };
-		63052986231E0A010011EC80 /* TGShopCareType.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63052982231E0A010011EC80 /* TGShopCareType.plist */; };
-		63052987231E0A010011EC80 /* TGShopInterest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63052983231E0A010011EC80 /* TGShopInterest.plist */; };
-		63052988231E0A010011EC80 /* TGShopCoach.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63052984231E0A010011EC80 /* TGShopCoach.plist */; };
-		63052989231E0A010011EC80 /* TGShopMeals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63052985231E0A010011EC80 /* TGShopMeals.plist */; };
 		6305298C231E0A440011EC80 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305298B231E0A440011EC80 /* UIButton+BackgroundColor.m */; };
-		63052994231E0AED0011EC80 /* ItemMeau.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052990231E0AEC0011EC80 /* ItemMeau.m */; };
-		63052995231E0AED0011EC80 /* MenuHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052991231E0AEC0011EC80 /* MenuHeadView.m */; };
-		63052996231E0AED0011EC80 /* MenuHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63052992231E0AEC0011EC80 /* MenuHeadView.xib */; };
-		63052997231E0AED0011EC80 /* ItemMeau.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63052993231E0AED0011EC80 /* ItemMeau.xib */; };
-		6305299E231E0AF80011EC80 /* TGHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052999231E0AF80011EC80 /* TGHomeTopView.m */; };
-		6305299F231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6305299B231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib */; };
-		630529A0231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305299D231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m */; };
-		630529A7231E0B480011EC80 /* TGHomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529A1231E0B470011EC80 /* TGHomeBaseViewController.m */; };
-		630529A8231E0B480011EC80 /* TGHomeSchoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529A3231E0B470011EC80 /* TGHomeSchoolController.m */; };
-		630529A9231E0B480011EC80 /* TGHomeShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529A5231E0B470011EC80 /* TGHomeShopController.m */; };
-		630529AD231E0B9C0011EC80 /* TGShopHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529AA231E0B9B0011EC80 /* TGShopHeaderView.m */; };
-		630529AE231E0B9C0011EC80 /* TGShopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630529AB231E0B9B0011EC80 /* TGShopHeaderView.xib */; };
 		630529BB231E141D0011EC80 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529B0231E141D0011EC80 /* WMPageController.m */; };
 		630529BC231E141D0011EC80 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529B6231E141D0011EC80 /* WMMenuItem.m */; };
 		630529BD231E141D0011EC80 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630529B7231E141D0011EC80 /* WMScrollView.m */; };
@@ -62,12 +33,6 @@
 		6338C0E523028F35001FF843 /* YPInterfaceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E423028F35001FF843 /* YPInterfaceURL.m */; };
 		6338C0E923029457001FF843 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0E823029457001FF843 /* DeviceInfo.m */; };
 		6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338C0EB23029A63001FF843 /* YPSessionManager.m */; };
-		634240FF239E542D008E5923 /* TGShopDetailDiscountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */; };
-		63424100239E542D008E5923 /* TGShopDetailDiscountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */; };
-		63424101239E542D008E5923 /* TGShopDetailDiscountItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */; };
-		63424104239E59C2008E5923 /* TGShopDetailDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = 63424103239E59C2008E5923 /* TGShopDetailDiscount.m */; };
-		63424108239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */; };
-		63424109239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */; };
 		637E60BA2340883400544C61 /* UIViewController+ModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E60B92340883400544C61 /* UIViewController+ModalStyle.m */; };
 		639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCA23039E4F002B10C5 /* UIViewController+WLBackButton.m */; };
 		639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 639AECCD23039E79002B10C5 /* UIViewController+BackButtonHandler.m */; };
@@ -108,8 +73,6 @@
 		63D8886223B9A67F00DEB0C1 /* PYPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8884E23B9A67F00DEB0C1 /* PYPhotoView.m */; };
 		63D8886323B9A67F00DEB0C1 /* PYPhotosView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63D8884F23B9A67F00DEB0C1 /* PYPhotosView.bundle */; };
 		63D8886723B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D8886623B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		63F00C3C232626B000364ADC /* TGSafeInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F00C3B232626B000364ADC /* TGSafeInfoView.m */; };
-		63F00C3F232626D400364ADC /* TGSafeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F00C3E232626D400364ADC /* TGSafeInfoView.xib */; };
 		7228BEFD37CC43A021D8C8EC /* libPods-YPProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */; };
 		7A546997CE780E7E70EF8941 /* libPods-YPProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */; };
 /* End PBXBuildFile section */
@@ -135,61 +98,14 @@
 		00CB31B5C8ADBC563D9281A4 /* Pods-YPProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectUITests/Pods-YPProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51BE99BE233CC57700CE8F91 /* YPModalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPModalController.h; sourceTree = "<group>"; };
-		51BE99BF233CC57700CE8F91 /* YPModalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPModalController.m; sourceTree = "<group>"; };
 		63052951231E07270011EC80 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
 		63052952231E07270011EC80 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
 		63052955231E07720011EC80 /* YPDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDiscoverController.h; sourceTree = "<group>"; };
 		63052956231E07720011EC80 /* YPDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDiscoverController.m; sourceTree = "<group>"; };
-		63052959231E07B30011EC80 /* YPArtScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPArtScrollView.h; sourceTree = "<group>"; };
-		6305295A231E07B30011EC80 /* YPArtScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPArtScrollView.m; sourceTree = "<group>"; };
 		6305295D231E09230011EC80 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		6305295E231E09230011EC80 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
-		63052961231E09630011EC80 /* TGSchoolInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSchoolInfoModel.h; sourceTree = "<group>"; };
-		63052962231E09630011EC80 /* TGShopInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopInfoModel.h; sourceTree = "<group>"; };
-		63052963231E09630011EC80 /* TGShopInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopInfoModel.m; sourceTree = "<group>"; };
-		63052964231E09630011EC80 /* TGSchoolInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSchoolInfoModel.m; sourceTree = "<group>"; };
-		63052967231E09750011EC80 /* TGProductOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGProductOptionModel.h; sourceTree = "<group>"; };
-		63052968231E09750011EC80 /* TGProductOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGProductOptionModel.m; sourceTree = "<group>"; };
-		6305296B231E09A50011EC80 /* TGHomeShopNewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGHomeShopNewCell.xib; sourceTree = "<group>"; };
-		6305296C231E09A50011EC80 /* TGHomeShopNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeShopNewCell.h; sourceTree = "<group>"; };
-		6305296D231E09A50011EC80 /* TGHomeShopNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeShopNewCell.m; sourceTree = "<group>"; };
-		63052971231E09CA0011EC80 /* TGCourseChooseTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCourseChooseTypeCell.m; sourceTree = "<group>"; };
-		63052972231E09CA0011EC80 /* TGCourseChooseTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCourseChooseTypeCell.h; sourceTree = "<group>"; };
-		63052973231E09CB0011EC80 /* TGGradeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGGradeSelectView.m; sourceTree = "<group>"; };
-		63052974231E09CB0011EC80 /* TGShopFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopFilterView.m; sourceTree = "<group>"; };
-		63052975231E09CB0011EC80 /* TGFilterContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGFilterContentView.h; sourceTree = "<group>"; };
-		63052976231E09CB0011EC80 /* TGShopFilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGShopFilterView.xib; sourceTree = "<group>"; };
-		63052977231E09CB0011EC80 /* TGCourseChooseTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGCourseChooseTypeCell.xib; sourceTree = "<group>"; };
-		63052978231E09CB0011EC80 /* TGFilterContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGFilterContentView.m; sourceTree = "<group>"; };
-		63052979231E09CB0011EC80 /* TGShopFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopFilterView.h; sourceTree = "<group>"; };
-		6305297A231E09CB0011EC80 /* TGGradeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGGradeSelectView.h; sourceTree = "<group>"; };
-		63052982231E0A010011EC80 /* TGShopCareType.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TGShopCareType.plist; sourceTree = "<group>"; };
-		63052983231E0A010011EC80 /* TGShopInterest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TGShopInterest.plist; sourceTree = "<group>"; };
-		63052984231E0A010011EC80 /* TGShopCoach.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TGShopCoach.plist; sourceTree = "<group>"; };
-		63052985231E0A010011EC80 /* TGShopMeals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TGShopMeals.plist; sourceTree = "<group>"; };
 		6305298A231E0A430011EC80 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
 		6305298B231E0A440011EC80 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
-		6305298E231E0AEC0011EC80 /* MenuHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHeadView.h; sourceTree = "<group>"; };
-		6305298F231E0AEC0011EC80 /* ItemMeau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemMeau.h; sourceTree = "<group>"; };
-		63052990231E0AEC0011EC80 /* ItemMeau.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemMeau.m; sourceTree = "<group>"; };
-		63052991231E0AEC0011EC80 /* MenuHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHeadView.m; sourceTree = "<group>"; };
-		63052992231E0AEC0011EC80 /* MenuHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuHeadView.xib; sourceTree = "<group>"; };
-		63052993231E0AED0011EC80 /* ItemMeau.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemMeau.xib; sourceTree = "<group>"; };
-		63052999231E0AF80011EC80 /* TGHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeTopView.m; sourceTree = "<group>"; };
-		6305299A231E0AF80011EC80 /* TGHomeHeaderRecommendItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeHeaderRecommendItem.h; sourceTree = "<group>"; };
-		6305299B231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGHomeHeaderRecommendItem.xib; sourceTree = "<group>"; };
-		6305299C231E0AF80011EC80 /* TGHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeTopView.h; sourceTree = "<group>"; };
-		6305299D231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeHeaderRecommendItem.m; sourceTree = "<group>"; };
-		630529A1231E0B470011EC80 /* TGHomeBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeBaseViewController.m; sourceTree = "<group>"; };
-		630529A2231E0B470011EC80 /* TGHomeBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeBaseViewController.h; sourceTree = "<group>"; };
-		630529A3231E0B470011EC80 /* TGHomeSchoolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeSchoolController.m; sourceTree = "<group>"; };
-		630529A4231E0B470011EC80 /* TGHomeShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeShopController.h; sourceTree = "<group>"; };
-		630529A5231E0B470011EC80 /* TGHomeShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeShopController.m; sourceTree = "<group>"; };
-		630529A6231E0B480011EC80 /* TGHomeSchoolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeSchoolController.h; sourceTree = "<group>"; };
-		630529AA231E0B9B0011EC80 /* TGShopHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopHeaderView.m; sourceTree = "<group>"; };
-		630529AB231E0B9B0011EC80 /* TGShopHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGShopHeaderView.xib; sourceTree = "<group>"; };
-		630529AC231E0B9C0011EC80 /* TGShopHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopHeaderView.h; sourceTree = "<group>"; };
 		630529B0231E141D0011EC80 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		630529B2231E141D0011EC80 /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
 		630529B3231E141D0011EC80 /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
@@ -236,16 +152,6 @@
 		6338C0E823029457001FF843 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		6338C0EA23029A63001FF843 /* YPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSessionManager.h; sourceTree = "<group>"; };
 		6338C0EB23029A63001FF843 /* YPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSessionManager.m; sourceTree = "<group>"; };
-		634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscountView.m; sourceTree = "<group>"; };
-		634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscountItem.m; sourceTree = "<group>"; };
-		634240FC239E542D008E5923 /* TGShopDetailDiscountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscountView.h; sourceTree = "<group>"; };
-		634240FD239E542D008E5923 /* TGShopDetailDiscountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscountItem.h; sourceTree = "<group>"; };
-		634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGShopDetailDiscountItem.xib; sourceTree = "<group>"; };
-		63424102239E59C2008E5923 /* TGShopDetailDiscount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGShopDetailDiscount.h; sourceTree = "<group>"; };
-		63424103239E59C2008E5923 /* TGShopDetailDiscount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGShopDetailDiscount.m; sourceTree = "<group>"; };
-		63424105239E5AA2008E5923 /* TGSHOPDetailDiscountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSHOPDetailDiscountCell.h; sourceTree = "<group>"; };
-		63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSHOPDetailDiscountCell.m; sourceTree = "<group>"; };
-		63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGSHOPDetailDiscountCell.xib; sourceTree = "<group>"; };
 		637E60B82340883400544C61 /* UIViewController+ModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalStyle.h"; sourceTree = "<group>"; };
 		637E60B92340883400544C61 /* UIViewController+ModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalStyle.m"; sourceTree = "<group>"; };
 		639AECC923039E4F002B10C5 /* UIViewController+WLBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLBackButton.h"; sourceTree = "<group>"; };
@@ -326,9 +232,6 @@
 		63D8886523B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		63D8886623B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		63D8886C23B9AC4200DEB0C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63F00C3A232626B000364ADC /* TGSafeInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSafeInfoView.h; sourceTree = "<group>"; };
-		63F00C3B232626B000364ADC /* TGSafeInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSafeInfoView.m; sourceTree = "<group>"; };
-		63F00C3E232626D400364ADC /* TGSafeInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGSafeInfoView.xib; sourceTree = "<group>"; };
 		7CCCA30A3FC69EA8E5807F25 /* Pods-YPProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectTests/Pods-YPProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2449F20A18AD8E55407B9E2 /* Pods-YPProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProject/Pods-YPProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C30AB3DC6A4C5F366DDCABD8 /* libPods-YPProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,34 +280,10 @@
 		63052954231E07370011EC80 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				63052960231E09470011EC80 /* Model */,
-				63052958231E078D0011EC80 /* View */,
 				63052955231E07720011EC80 /* YPDiscoverController.h */,
 				63052956231E07720011EC80 /* YPDiscoverController.m */,
-				630529A2231E0B470011EC80 /* TGHomeBaseViewController.h */,
-				630529A1231E0B470011EC80 /* TGHomeBaseViewController.m */,
-				630529A6231E0B480011EC80 /* TGHomeSchoolController.h */,
-				630529A3231E0B470011EC80 /* TGHomeSchoolController.m */,
-				630529A4231E0B470011EC80 /* TGHomeShopController.h */,
-				630529A5231E0B470011EC80 /* TGHomeShopController.m */,
 			);
 			path = Discover;
-			sourceTree = "<group>";
-		};
-		63052958231E078D0011EC80 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				63052998231E0AF80011EC80 /* TopView */,
-				6305298D231E0AD00011EC80 /* HeadView */,
-				63052970231E09B90011EC80 /* PopView */,
-				6305296A231E09900011EC80 /* Cell */,
-				63052959231E07B30011EC80 /* YPArtScrollView.h */,
-				6305295A231E07B30011EC80 /* YPArtScrollView.m */,
-				630529AC231E0B9C0011EC80 /* TGShopHeaderView.h */,
-				630529AA231E0B9B0011EC80 /* TGShopHeaderView.m */,
-				630529AB231E0B9B0011EC80 /* TGShopHeaderView.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6305295C231E09060011EC80 /* NSString */ = {
@@ -414,83 +293,6 @@
 				6305295D231E09230011EC80 /* NSString+Common.m */,
 			);
 			path = NSString;
-			sourceTree = "<group>";
-		};
-		63052960231E09470011EC80 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				63052967231E09750011EC80 /* TGProductOptionModel.h */,
-				63052968231E09750011EC80 /* TGProductOptionModel.m */,
-				63052961231E09630011EC80 /* TGSchoolInfoModel.h */,
-				63052964231E09630011EC80 /* TGSchoolInfoModel.m */,
-				63052962231E09630011EC80 /* TGShopInfoModel.h */,
-				63052963231E09630011EC80 /* TGShopInfoModel.m */,
-				63052981231E09F80011EC80 /* Plist */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6305296A231E09900011EC80 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				6305296C231E09A50011EC80 /* TGHomeShopNewCell.h */,
-				6305296D231E09A50011EC80 /* TGHomeShopNewCell.m */,
-				6305296B231E09A50011EC80 /* TGHomeShopNewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		63052970231E09B90011EC80 /* PopView */ = {
-			isa = PBXGroup;
-			children = (
-				63052972231E09CA0011EC80 /* TGCourseChooseTypeCell.h */,
-				63052971231E09CA0011EC80 /* TGCourseChooseTypeCell.m */,
-				63052977231E09CB0011EC80 /* TGCourseChooseTypeCell.xib */,
-				63052975231E09CB0011EC80 /* TGFilterContentView.h */,
-				63052978231E09CB0011EC80 /* TGFilterContentView.m */,
-				6305297A231E09CB0011EC80 /* TGGradeSelectView.h */,
-				63052973231E09CB0011EC80 /* TGGradeSelectView.m */,
-				63052979231E09CB0011EC80 /* TGShopFilterView.h */,
-				63052974231E09CB0011EC80 /* TGShopFilterView.m */,
-				63052976231E09CB0011EC80 /* TGShopFilterView.xib */,
-			);
-			path = PopView;
-			sourceTree = "<group>";
-		};
-		63052981231E09F80011EC80 /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				63052982231E0A010011EC80 /* TGShopCareType.plist */,
-				63052984231E0A010011EC80 /* TGShopCoach.plist */,
-				63052983231E0A010011EC80 /* TGShopInterest.plist */,
-				63052985231E0A010011EC80 /* TGShopMeals.plist */,
-			);
-			path = Plist;
-			sourceTree = "<group>";
-		};
-		6305298D231E0AD00011EC80 /* HeadView */ = {
-			isa = PBXGroup;
-			children = (
-				6305298F231E0AEC0011EC80 /* ItemMeau.h */,
-				63052990231E0AEC0011EC80 /* ItemMeau.m */,
-				63052993231E0AED0011EC80 /* ItemMeau.xib */,
-				6305298E231E0AEC0011EC80 /* MenuHeadView.h */,
-				63052991231E0AEC0011EC80 /* MenuHeadView.m */,
-				63052992231E0AEC0011EC80 /* MenuHeadView.xib */,
-			);
-			path = HeadView;
-			sourceTree = "<group>";
-		};
-		63052998231E0AF80011EC80 /* TopView */ = {
-			isa = PBXGroup;
-			children = (
-				6305299A231E0AF80011EC80 /* TGHomeHeaderRecommendItem.h */,
-				6305299D231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m */,
-				6305299B231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib */,
-				6305299C231E0AF80011EC80 /* TGHomeTopView.h */,
-				63052999231E0AF80011EC80 /* TGHomeTopView.m */,
-			);
-			path = TopView;
 			sourceTree = "<group>";
 		};
 		630529AF231E141D0011EC80 /* WMPageController */ = {
@@ -675,12 +477,8 @@
 		632B00F123016A7600540399 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				634240F4239E4CC4008E5923 /* Discount */,
-				63F00C3D232626B600364ADC /* View */,
 				632B00FB2301726F00540399 /* YPHomeViewController.h */,
 				632B00FC2301726F00540399 /* YPHomeViewController.m */,
-				51BE99BE233CC57700CE8F91 /* YPModalController.h */,
-				51BE99BF233CC57700CE8F91 /* YPModalController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -760,23 +558,6 @@
 				6338C0E823029457001FF843 /* DeviceInfo.m */,
 			);
 			path = DeviceInfo;
-			sourceTree = "<group>";
-		};
-		634240F4239E4CC4008E5923 /* Discount */ = {
-			isa = PBXGroup;
-			children = (
-				634240FD239E542D008E5923 /* TGShopDetailDiscountItem.h */,
-				634240FB239E542D008E5923 /* TGShopDetailDiscountItem.m */,
-				634240FE239E542D008E5923 /* TGShopDetailDiscountItem.xib */,
-				634240FC239E542D008E5923 /* TGShopDetailDiscountView.h */,
-				634240FA239E542D008E5923 /* TGShopDetailDiscountView.m */,
-				63424102239E59C2008E5923 /* TGShopDetailDiscount.h */,
-				63424103239E59C2008E5923 /* TGShopDetailDiscount.m */,
-				63424105239E5AA2008E5923 /* TGSHOPDetailDiscountCell.h */,
-				63424106239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m */,
-				63424107239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib */,
-			);
-			path = Discount;
 			sourceTree = "<group>";
 		};
 		639AECC723039E28002B10C5 /* Category */ = {
@@ -1069,16 +850,6 @@
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
-		63F00C3D232626B600364ADC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				63F00C3A232626B000364ADC /* TGSafeInfoView.h */,
-				63F00C3B232626B000364ADC /* TGSafeInfoView.m */,
-				63F00C3E232626D400364ADC /* TGSafeInfoView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		81669308B7B3437B4457154F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1210,24 +981,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6305299F231E0AF80011EC80 /* TGHomeHeaderRecommendItem.xib in Resources */,
-				63052997231E0AED0011EC80 /* ItemMeau.xib in Resources */,
 				6338C0DD2302871F001FF843 /* imageSet.xcassets in Resources */,
-				63052987231E0A010011EC80 /* TGShopInterest.plist in Resources */,
-				63F00C3F232626D400364ADC /* TGSafeInfoView.xib in Resources */,
-				6305296E231E09A50011EC80 /* TGHomeShopNewCell.xib in Resources */,
-				63052989231E0A010011EC80 /* TGShopMeals.plist in Resources */,
 				632B00BB2301641100540399 /* Assets.xcassets in Resources */,
-				6305297E231E09CB0011EC80 /* TGShopFilterView.xib in Resources */,
-				630529AE231E0B9C0011EC80 /* TGShopHeaderView.xib in Resources */,
-				63052986231E0A010011EC80 /* TGShopCareType.plist in Resources */,
-				63052996231E0AED0011EC80 /* MenuHeadView.xib in Resources */,
-				63052988231E0A010011EC80 /* TGShopCoach.plist in Resources */,
-				63424101239E542D008E5923 /* TGShopDetailDiscountItem.xib in Resources */,
-				63424109239E5AA3008E5923 /* TGSHOPDetailDiscountCell.xib in Resources */,
 				63D8885423B9A67F00DEB0C1 /* CLPlayer.bundle in Resources */,
 				63D8886323B9A67F00DEB0C1 /* PYPhotosView.bundle in Resources */,
-				6305297F231E09CB0011EC80 /* TGCourseChooseTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1344,34 +1101,23 @@
 				63D8885B23B9A67F00DEB0C1 /* PYPhotosReaderController.m in Sources */,
 				63B1B9FF2302C095002A3A96 /* TransitionAnimation.m in Sources */,
 				639AECCB23039E4F002B10C5 /* UIViewController+WLBackButton.m in Sources */,
-				63052965231E09630011EC80 /* TGShopInfoModel.m in Sources */,
 				63052953231E07270011EC80 /* EllipsePageControl.m in Sources */,
 				630529BE231E141D0011EC80 /* WMMenuView.m in Sources */,
-				63052966231E09630011EC80 /* TGSchoolInfoModel.m in Sources */,
 				630529BD231E141D0011EC80 /* WMScrollView.m in Sources */,
 				63D8885D23B9A67F00DEB0C1 /* PYPhotosPreviewController.m in Sources */,
-				634240FF239E542D008E5923 /* TGShopDetailDiscountView.m in Sources */,
 				6338C0EC23029A63001FF843 /* YPSessionManager.m in Sources */,
-				63F00C3C232626B000364ADC /* TGSafeInfoView.m in Sources */,
 				6305298C231E0A440011EC80 /* UIButton+BackgroundColor.m in Sources */,
-				630529AD231E0B9C0011EC80 /* TGShopHeaderView.m in Sources */,
 				63A39E152303ECDF00D5F1B6 /* UIColor+Extension.m in Sources */,
-				63052980231E09CB0011EC80 /* TGFilterContentView.m in Sources */,
 				63B1BA032302C2E0002A3A96 /* YPBaseTableController.m in Sources */,
 				6305295F231E09230011EC80 /* NSString+Common.m in Sources */,
-				63424104239E59C2008E5923 /* TGShopDetailDiscount.m in Sources */,
-				6305297D231E09CB0011EC80 /* TGShopFilterView.m in Sources */,
 				6338C0DC2302871F001FF843 /* YPProgressHUD.m in Sources */,
 				63D8885823B9A67F00DEB0C1 /* PYProgressView.m in Sources */,
 				63D8885923B9A67F00DEB0C1 /* PYPhotoBrowserConst.m in Sources */,
-				63424108239E5AA3008E5923 /* TGSHOPDetailDiscountCell.m in Sources */,
 				63A39E1A2303FF6100D5F1B6 /* NSError+Extension.m in Sources */,
-				63052994231E0AED0011EC80 /* ItemMeau.m in Sources */,
 				63D8886023B9A67F00DEB0C1 /* PYPhotoBrowseView.m in Sources */,
 				63B1B9F62302BC31002A3A96 /* YPBaseNavitionController.m in Sources */,
 				63A39E1F2304024A00D5F1B6 /* UIView+Extension.m in Sources */,
 				63D8885F23B9A67F00DEB0C1 /* PYPhotosView.m in Sources */,
-				630529A7231E0B480011EC80 /* TGHomeBaseViewController.m in Sources */,
 				63B1B9F02302B8B4002A3A96 /* YPBaseController.m in Sources */,
 				63D8885723B9A67F00DEB0C1 /* MBProgressHUD+PYExtension.m in Sources */,
 				63B1BA0B2302DB02002A3A96 /* YPReachability.m in Sources */,
@@ -1381,28 +1127,19 @@
 				63D8885523B9A67F00DEB0C1 /* TGPlayerView.m in Sources */,
 				63B1B9F92302BFA3002A3A96 /* YPBaseTabBarController.m in Sources */,
 				63D8885123B9A67F00DEB0C1 /* CLSlider.m in Sources */,
-				63424100239E542D008E5923 /* TGShopDetailDiscountItem.m in Sources */,
 				63D8886123B9A67F00DEB0C1 /* PYPhotoCell.m in Sources */,
 				6338C0E923029457001FF843 /* DeviceInfo.m in Sources */,
-				6305295B231E07B30011EC80 /* YPArtScrollView.m in Sources */,
 				63B1BA002302C095002A3A96 /* TransitionController.m in Sources */,
 				6338C0E123028C7D001FF843 /* YPHttpTool.m in Sources */,
 				632B01032301822000540399 /* YPAppHealper.m in Sources */,
-				630529A0231E0AF80011EC80 /* TGHomeHeaderRecommendItem.m in Sources */,
-				630529A8231E0B480011EC80 /* TGHomeSchoolController.m in Sources */,
 				637E60BA2340883400544C61 /* UIViewController+ModalStyle.m in Sources */,
 				63D8885A23B9A67F00DEB0C1 /* PYPhotosViewController.m in Sources */,
-				6305297B231E09CB0011EC80 /* TGCourseChooseTypeCell.m in Sources */,
-				6305299E231E0AF80011EC80 /* TGHomeTopView.m in Sources */,
 				63D8885223B9A67F00DEB0C1 /* CLPlayerMaskView.m in Sources */,
-				63052969231E09750011EC80 /* TGProductOptionModel.m in Sources */,
-				630529A9231E0B480011EC80 /* TGHomeShopController.m in Sources */,
 				63A39E262304112400D5F1B6 /* YPBaseWKWebController.m in Sources */,
 				63D8885023B9A67F00DEB0C1 /* CLPlayerViewController.m in Sources */,
 				630529BB231E141D0011EC80 /* WMPageController.m in Sources */,
 				632B00EC2301665B00540399 /* YPLoginViewController.m in Sources */,
 				632B00FD2301726F00540399 /* YPHomeViewController.m in Sources */,
-				63052995231E0AED0011EC80 /* MenuHeadView.m in Sources */,
 				63A39E2323040E8800D5F1B6 /* UIButton+LXMImagePosition.m in Sources */,
 				63B1BA072302C32C002A3A96 /* YPTableView.m in Sources */,
 				632B00C12301641100540399 /* main.m in Sources */,
@@ -1410,16 +1147,13 @@
 				630529BF231E141D0011EC80 /* WMProgressView.m in Sources */,
 				639AECCE23039E7A002B10C5 /* UIViewController+BackButtonHandler.m in Sources */,
 				63A39E0F2303D95A00D5F1B6 /* UIImage+Color.m in Sources */,
-				6305296F231E09A50011EC80 /* TGHomeShopNewCell.m in Sources */,
 				63052957231E07720011EC80 /* YPDiscoverController.m in Sources */,
 				63D8886723B9A77400DEB0C1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				632B01002301727800540399 /* YPMineViewController.m in Sources */,
 				632B00B32301640F00540399 /* AppDelegate.m in Sources */,
 				630529BC231E141D0011EC80 /* WMMenuItem.m in Sources */,
-				6305297C231E09CB0011EC80 /* TGGradeSelectView.m in Sources */,
 				63D8885C23B9A67F00DEB0C1 /* PYPhotosNavigationController.m in Sources */,
 				63D8885623B9A67F00DEB0C1 /* UIView+PYExtension.m in Sources */,
-				51BE99C0233CC57700CE8F91 /* YPModalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
