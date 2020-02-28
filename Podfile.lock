@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AgoraRtcEngine_iOS (2.8.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -36,6 +37,23 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MJExtension (3.1.2)
   - MJRefresh (3.2.0)
+  - PolyvAliHttpDNS (1.6.7)
+  - PolyvBusinessSDK (0.10.2):
+    - PolyvFoundationSDK (~> 0.9.1)
+  - PolyvCloudClassSDK (0.11.2):
+    - PolyvCloudClassSDK/Core (= 0.11.2)
+    - PolyvCloudClassSDK/Player (= 0.11.2)
+    - PolyvCloudClassSDK/ThirdPart (= 0.11.2)
+  - PolyvCloudClassSDK/Core (0.11.2):
+    - PolyvBusinessSDK (~> 0.10.2)
+  - PolyvCloudClassSDK/Player (0.11.2):
+    - PolyvIJKPlayer (~> 0.6.0)
+  - PolyvCloudClassSDK/ThirdPart (0.11.2):
+    - AgoraRtcEngine_iOS (~> 2.8.0)
+    - PolyvAliHttpDNS (~> 1.6.7)
+    - Socket.IO-Client-Swift (~> 14.0.0)
+  - PolyvFoundationSDK (0.9.1)
+  - PolyvIJKPlayer (0.6.0)
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - SDCycleScrollView (1.80):
@@ -43,6 +61,9 @@ PODS:
   - SDWebImage (5.1.1):
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
+  - Socket.IO-Client-Swift (14.0.0):
+    - Starscream (~> 3.0.6)
+  - Starscream (3.0.6)
   - SVProgressHUD (2.2.5)
   - zhPopupController (1.0.3)
 
@@ -56,6 +77,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJExtension
   - MJRefresh
+  - PolyvCloudClassSDK (= 0.11.2)
   - Reachability
   - ReactiveObjC
   - SDCycleScrollView (~> 1.80)
@@ -66,6 +88,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - AgoraRtcEngine_iOS
     - BlocksKit
     - DACircularProgress
     - DZNEmptyDataSet
@@ -74,15 +97,23 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - PolyvAliHttpDNS
+    - PolyvBusinessSDK
+    - PolyvCloudClassSDK
+    - PolyvFoundationSDK
+    - PolyvIJKPlayer
     - Reachability
     - ReactiveObjC
     - SDCycleScrollView
     - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
     - SVProgressHUD
     - zhPopupController
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AgoraRtcEngine_iOS: 85810ba2f492646ab0eb20fbd8ca016b4b69002d
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -91,13 +122,20 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  PolyvAliHttpDNS: 0fbbbcd3aab07a48305d36884681ca33849cc0b7
+  PolyvBusinessSDK: 06319b3553190546ce94239677e167c8d436100d
+  PolyvCloudClassSDK: 33a713488b5e83087cb14d648ddc557a3212a20c
+  PolyvFoundationSDK: 63d7a2e012a215d8418dc6fea0eb0e7282748a8d
+  PolyvIJKPlayer: a0b8a5e0147fc18dba8081a5c6fd66f44e64fb0f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
+  Socket.IO-Client-Swift: 21e6a8a23a7d367d5ddfab6cbbd3c679cf3c25d6
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   zhPopupController: 4e6bd734062cb9c7ebe8113568550bade168bed7
 
-PODFILE CHECKSUM: 4d7662a67d20ebf774e95a4b6b60fbaf90fc3faf
+PODFILE CHECKSUM: 74903908de4437807cc3993236da99c3f10020fc
 
 COCOAPODS: 1.8.4

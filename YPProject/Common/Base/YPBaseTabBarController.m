@@ -31,8 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.delegate = self;
-    [self.view addGestureRecognizer:self.panGestureRecognizer];
+//    self.delegate = self;
+//    [self.view addGestureRecognizer:self.panGestureRecognizer];
     
     [self setTabbarComfig];
     [self setTabBarMenuItems];

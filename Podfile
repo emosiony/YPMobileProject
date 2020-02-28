@@ -28,6 +28,7 @@ target 'YPProject' do
   pod 'zhPopupController' # 弹窗 弹自定义View
   pod 'FLAnimatedImage'
   pod 'DACircularProgress'
+  pod 'PolyvCloudClassSDK', '0.11.2' # polyv 云课堂 SDK
 
   target 'YPProjectTests' do
     inherit! :search_paths

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YPLoginViewController.h"
 #import "YPAppConfig.h"
+#import <PolyvCloudClassSDK/PolyvCloudClassSDK.h>
 
 @interface AppDelegate ()
 
@@ -32,7 +33,11 @@
 -(void)setUpThirdInit {
     
     [[YPAppConfig shareInstance] setConfigInit];
-    [YPProgressHUD yp_showHUDMessage:@"hello kitty"];
+    
+    PLVLiveVideoConfig *liveConfig = [PLVLiveVideoConfig sharedInstance];
+    liveConfig.appId     = @"fkv2ejhl6q";
+    liveConfig.userId    = @"3428439316";
+    liveConfig.appSecret = @"2fde8109f6a34cd5873314df8b9a64e5";
 }
 
 +(AppDelegate *)shareDelegate {
