@@ -14,9 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YPBaseController : UIViewController
 
 /** 是否隐藏 navigationBar */
-@property (nonatomic,assign) BOOL hiddenNavigationBar;
+@property (nonatomic, assign) BOOL prefersNavigationBarHidden;
 /** 隐藏 navigationBar 下 的线条 */
-@property (nonatomic,assign) BOOL hiddenNavigationBarShowImage;
+@property (nonatomic, assign) BOOL prefersNavigationBarBottomLineHidden;
+
+/// 截图（Push/Pop Present/Dismiss 过度过程中的缩略图）主要用在过渡动画里面
+@property (nonatomic, strong) UIView *snapshot;
+
 
 
 /// iOS 13 样式 present

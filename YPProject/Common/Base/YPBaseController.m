@@ -19,22 +19,31 @@
     
     [super viewWillAppear:animated];
     
-    if (self.hiddenNavigationBar) {
-        [self.navigationController setNavigationBarHidden:YES];
+    if (self.prefersNavigationBarHidden) {
+        [self.navigationController setNavigationBarHidden:self.prefersNavigationBarHidden animated:YES];
     }
     
-    if (self.hiddenNavigationBarShowImage) {
+    if (self.prefersNavigationBarBottomLineHidden) {
         self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:[UIColor clearColor]];
     }
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
-    if (self.hiddenNavigationBar) {
-        [self.navigationController setNavigationBarHidden:NO];
+    
+    [super viewWillDisappear:animated];
+
+    
+    if (self.prefersNavigationBarHidden) {
+        [self.navigationController setNavigationBarHidden:self.prefersNavigationBarHidden animated:YES];
     }
     
-    if (self.hiddenNavigationBarShowImage) {
+    if (self.prefersNavigationBarBottomLineHidden) {
         self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:RGB(212, 212, 212)];
+    }
+    
+    // 截图
+    if (self.isMovingFromParentViewController) {
+        self.snapshot = [self.navigationController.view snapshotViewAfterScreenUpdates:NO];
     }
 }
 
