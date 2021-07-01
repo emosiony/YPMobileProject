@@ -8,6 +8,7 @@
 
 #import "YPProgressHUD.h"
 #import <SVProgressHUD.h>
+#import <SDWebImage/UIImage+GIF.h>
 
 #define SHOW_IMAGE_SIZE CGSizeMake(50, 50)
 #define SHOW_DELAY_TIME 2.0f
@@ -19,7 +20,7 @@
     
     [SVProgressHUD setMinimumDismissTimeInterval:0.0f];
     [SVProgressHUD setImageViewSize:SHOW_IMAGE_SIZE];
-
+    
     [SVProgressHUD setSuccessImage:IMAGENANED(@"hud_success")];
     [SVProgressHUD setErrorImage:IMAGENANED(@"hud_error")];
     [SVProgressHUD setInfoImage:IMAGENANED(@"hud_info")];
@@ -44,43 +45,32 @@
 
 /** HUD 回调 */
 + (void)yp_showHUDMessage:(NSString *)message
-           dismissTime:(NSTimeInterval)time
-              complete:(void(^)(void))complete
+              dismissTime:(NSTimeInterval)time
+                 complete:(void(^)(void))complete
 {
     UIImage *emptyImage = nil;
     [SVProgressHUD showImage:emptyImage status:message];
-    [SVProgressHUD dismissWithDelay:time completion:^{
-        complete ? complete() : nil;
-    }];
+    [self yp_dismissHUDWithDelay:time completion:complete];
 }
 
 #pragma mark -- 加载中...
-+ (void)yp_showDefaultLoading {
-    [self yp_showHUDWithTitle:@"加载中..."];
-}
-
-#pragma mark -- 文字
-/** 显示HUD */
-+ (void)yp_showHUDWithTitle:(NSString *)title
-{
-    [SVProgressHUD showWithStatus:title];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
-}
-
-#pragma mark -- 加载中...
-+ (void)yp_showDIYLoading {
-    [self yp_showDIYLoadingMsg:@"加载中..."];
++ (void)yp_showLoading {
+    
+    [self yp_showLoadingMsg:nil];
 }
 
 #pragma mark -- 自定义文字...
-+ (void)yp_showDIYLoadingMsg:(NSString *)message {
++ (void)yp_showLoadingMsg:(NSString *)message {
     
     [SVProgressHUD setMinimumDismissTimeInterval:MAXFLOAT];
     // 设置背景颜色为透明色
     [SVProgressHUD showImage:[self loadGifImage] status:message];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    
+    [SVProgressHUD dismissWithCompletion:^{
+        [SVProgressHUD setImageViewSize:SHOW_IMAGE_SIZE];
+        [SVProgressHUD setMinimumDismissTimeInterval:0.0f];
+    }];
 }
-
 
 #pragma mark -- 成功、失败、信息 HUD
 /** 成功HUD */
@@ -107,36 +97,37 @@
 
 +(UIImage *)loadGifImage {
     
-    [SVProgressHUD setImageViewSize:SHOW_IMAGE_SIZE];
-    
-    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
-    NSMutableArray *loadingImages = [NSMutableArray array];
-    for (NSUInteger i = 1; i <= 9; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"icon_hud_%zd", i]];
-        [loadingImages addObject:image];
-    }
-    
-    return [UIImage animatedImageWithImages:loadingImages duration:SHOW_DELAY_TIME];
+    [SVProgressHUD setImageViewSize:CGSizeMake(53, 53)];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ac_loading" ofType:@"gif"];
+    NSData *imgData = [NSData dataWithContentsOfFile:path];
+    UIImage *image = [UIImage sd_imageWithGIFData:imgData];
+    return image;
 }
 #pragma mark -- 隐藏
 /** 隐藏HUD */
 + (void)yp_dismissHUD
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        [SVProgressHUD setMinimumDismissTimeInterval:0.0f];
-        [SVProgressHUD dismiss];
-    });
+    [self yp_dismissHUDWithDelay:0.0f];
 }
 
 /** 隐藏HUD带时间参数 */
 + (void)yp_dismissHUDWithDelay:(NSTimeInterval)delay
 {
+    [self yp_dismissHUDWithDelay:delay completion:nil];
+}
+
++ (void)yp_dismissHUDWithDelay:(NSTimeInterval)delay completion:(void(^)(void))completion {
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        [SVProgressHUD setMinimumDismissTimeInterval:0.0f];
-        [SVProgressHUD dismissWithDelay:delay];
+        [SVProgressHUD dismissWithDelay:delay completion:^{
+            
+            [SVProgressHUD setImageViewSize:SHOW_IMAGE_SIZE];
+            [SVProgressHUD setMinimumDismissTimeInterval:0.0f];
+            completion ? completion() : nil;
+        }];
     });
 }
+
 
 @end

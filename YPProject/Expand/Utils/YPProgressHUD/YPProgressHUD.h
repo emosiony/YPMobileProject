@@ -22,17 +22,14 @@
 +(void)yp_showHUDMessage:(NSString *)message complete:(void(^)(void))complete;
 /** HUD 回调 */
 +(void)yp_showHUDMessage:(NSString *)message
-          dismissTime:(NSTimeInterval)time
-             complete:(void(^)(void))complete;
-
-#pragma mark -- 加载中
-+(void)yp_showDefaultLoading;
+             dismissTime:(NSTimeInterval)time
+                complete:(void(^)(void))complete;
 
 #pragma mark -- 加载中DIY...
-+ (void)yp_showDIYLoading;
++ (void)yp_showLoading;
 
 #pragma mark -- 自定义文字...
-+ (void)yp_showDIYLoadingMsg:(NSString *)message;
++ (void)yp_showLoadingMsg:(NSString *)message;
 
 #pragma mark -- 小菊花 网络请求 带activity 或者 图片
 /** 显示HUD */
@@ -49,5 +46,7 @@
 +(void)yp_dismissHUD;
 /** 隐藏HUD带时间参数 */
 +(void)yp_dismissHUDWithDelay:(NSTimeInterval)delay;
+/** 隐藏HUD带时间参数 带回调 */
++ (void)yp_dismissHUDWithDelay:(NSTimeInterval)delay completion:(void(^)(void))completion;
 
 @end

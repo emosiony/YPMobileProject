@@ -28,6 +28,8 @@ target 'YPProject' do
   pod 'zhPopupController' # 弹窗 弹自定义View
   pod 'FLAnimatedImage'
   pod 'DACircularProgress'
+  
+  pod 'YPHttpTool',  :git =>'https://gitee.com/eMoision/YPHttpTool.git', :tag =>'0.0.2'
 
   target 'YPProjectTests' do
     inherit! :search_paths

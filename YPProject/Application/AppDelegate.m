@@ -32,7 +32,6 @@
 -(void)setUpThirdInit {
     
     [[YPAppConfig shareInstance] setConfigInit];
-    [YPProgressHUD yp_showHUDMessage:@"hello kitty"];
 }
 
 +(AppDelegate *)shareDelegate {

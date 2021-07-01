@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041347AC251B3394004143D1 /* BaseWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041347AB251B3394004143D1 /* BaseWKWebViewController.m */; };
+		049AA41525A5B2940053D6DC /* indicator_waitanim.gif in Resources */ = {isa = PBXBuildFile; fileRef = 049AA41425A5B2940053D6DC /* indicator_waitanim.gif */; };
+		04ACDC3125B02F2300D432D7 /* ac_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04ACDC2E25B02F2200D432D7 /* ac_loading.gif */; };
+		04ACDC3225B02F2300D432D7 /* loading_white.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04ACDC2F25B02F2200D432D7 /* loading_white.gif */; };
+		04ACDC3325B02F2300D432D7 /* loading_red.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04ACDC3025B02F2300D432D7 /* loading_red.gif */; };
 		23E50A3F0EBFCD9F41492676 /* libPods-YPProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */; };
 		63052953231E07270011EC80 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052952231E07270011EC80 /* EllipsePageControl.m */; };
 		63052957231E07720011EC80 /* YPDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63052956231E07720011EC80 /* YPDiscoverController.m */; };
@@ -96,7 +101,13 @@
 
 /* Begin PBXFileReference section */
 		00CB31B5C8ADBC563D9281A4 /* Pods-YPProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPProjectUITests/Pods-YPProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		041347AA251B3394004143D1 /* BaseWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWKWebViewController.h; sourceTree = "<group>"; };
+		041347AB251B3394004143D1 /* BaseWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWKWebViewController.m; sourceTree = "<group>"; };
 		04624FEFF63AD41278876AB5 /* libPods-YPProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		049AA41425A5B2940053D6DC /* indicator_waitanim.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = indicator_waitanim.gif; sourceTree = "<group>"; };
+		04ACDC2E25B02F2200D432D7 /* ac_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ac_loading.gif; sourceTree = "<group>"; };
+		04ACDC2F25B02F2200D432D7 /* loading_white.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_white.gif; sourceTree = "<group>"; };
+		04ACDC3025B02F2300D432D7 /* loading_red.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_red.gif; sourceTree = "<group>"; };
 		3FAEA46BB85D9177E4F32C86 /* libPods-YPProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63052951231E07270011EC80 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
 		63052952231E07270011EC80 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
@@ -479,6 +490,8 @@
 			children = (
 				632B00FB2301726F00540399 /* YPHomeViewController.h */,
 				632B00FC2301726F00540399 /* YPHomeViewController.m */,
+				041347AA251B3394004143D1 /* BaseWKWebViewController.h */,
+				041347AB251B3394004143D1 /* BaseWKWebViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -522,6 +535,10 @@
 		6338C0D82302871F001FF843 /* YPProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				04ACDC2E25B02F2200D432D7 /* ac_loading.gif */,
+				04ACDC3025B02F2300D432D7 /* loading_red.gif */,
+				04ACDC2F25B02F2200D432D7 /* loading_white.gif */,
+				049AA41425A5B2940053D6DC /* indicator_waitanim.gif */,
 				6338C0D92302871F001FF843 /* YPProgressHUD.h */,
 				6338C0DA2302871F001FF843 /* YPProgressHUD.m */,
 				6338C0DB2302871F001FF843 /* imageSet.xcassets */,
@@ -712,8 +729,8 @@
 		63D8881D23B9A67E00DEB0C1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				63D8881E23B9A67E00DEB0C1 /* CLPlayerViewController.m */,
 				63D8881F23B9A67E00DEB0C1 /* CLPlayerViewController.h */,
+				63D8881E23B9A67E00DEB0C1 /* CLPlayerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -982,9 +999,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6338C0DD2302871F001FF843 /* imageSet.xcassets in Resources */,
+				049AA41525A5B2940053D6DC /* indicator_waitanim.gif in Resources */,
 				632B00BB2301641100540399 /* Assets.xcassets in Resources */,
+				04ACDC3225B02F2300D432D7 /* loading_white.gif in Resources */,
 				63D8885423B9A67F00DEB0C1 /* CLPlayer.bundle in Resources */,
 				63D8886323B9A67F00DEB0C1 /* PYPhotosView.bundle in Resources */,
+				04ACDC3125B02F2300D432D7 /* ac_loading.gif in Resources */,
+				04ACDC3325B02F2300D432D7 /* loading_red.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,6 +1162,7 @@
 				632B00EC2301665B00540399 /* YPLoginViewController.m in Sources */,
 				632B00FD2301726F00540399 /* YPHomeViewController.m in Sources */,
 				63A39E2323040E8800D5F1B6 /* UIButton+LXMImagePosition.m in Sources */,
+				041347AC251B3394004143D1 /* BaseWKWebViewController.m in Sources */,
 				63B1BA072302C32C002A3A96 /* YPTableView.m in Sources */,
 				632B00C12301641100540399 /* main.m in Sources */,
 				63D8885E23B9A67F00DEB0C1 /* PYPhoto.m in Sources */,
@@ -1308,7 +1330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LW5Y3D4HU2;
+				DEVELOPMENT_TEAM = 282386R326;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YPProject/SupportingFile/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YPProject/SupportingFile/Info.plist";
@@ -1330,7 +1352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LW5Y3D4HU2;
+				DEVELOPMENT_TEAM = 282386R326;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YPProject/SupportingFile/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YPProject/SupportingFile/Info.plist";

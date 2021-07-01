@@ -19,4 +19,9 @@
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [YPProgressHUD yp_showSuccessHUDWithTitle:@"success"];
+}
+
 @end
